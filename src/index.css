@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  * {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
 .main-heading {
   @apply text-myBlue text-[44px] font-extrabold leading-[60px] lg:text-[56px] lg:leading-[78px];
 }
@@ -19,5 +25,5 @@
 }
 
 .button {
-  @apply text-[14px] font-semibold text-myRed;
+  @apply text-[14px] font-semibold uppercase text-myRed;
 }
