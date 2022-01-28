@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main-heading {
+  @apply text-myBlue text-[44px] font-extrabold leading-[60px] lg:text-[56px] lg:leading-[78px];
+}
+
+.sub-heading {
+  @apply text-myBlue text-[32px] font-bold leading-[34.32px] lg:leading-[35.52px];
+}
+
+.main-para {
+  @apply text-[22px] font-medium leading-[34.32px] lg:text-[24px] lg:leading-[35.52px];
+}
+
+.para {
+  @apply text-[18px] font-normal leading-[27.36px];
+}
+
+.button {
+  @apply text-[14px] font-semibold text-myRed;
+}
