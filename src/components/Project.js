@@ -34,7 +34,7 @@ function Project() {
             }`}
           >
             <img
-              className={`object-cover ${
+              className={`rounded object-cover ${
                 item.id % 2 === 0 ? 'order-last' : 'order-first'
               }`}
               src={item.img}
@@ -53,7 +53,7 @@ function Project() {
                 </ul>
               </div>
               <div className='button border-myRed mt-[28px] flex cursor-pointer items-center justify-center rounded-[4px] border-[1.5px] py-[16px] xl:mt-[32px] xl:max-w-[151px]'>
-                <p>View Project</p>
+                <p className='text-myRed'>View Project</p>
               </div>
             </div>
           </div>
