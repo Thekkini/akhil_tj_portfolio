@@ -65,7 +65,7 @@ export const projectCards = [
       },
     ],
     link: '/',
-    type: 'laptop',
+    type: 'phone',
   },
 ];
 

@@ -4,7 +4,7 @@ import Home from './pages/Home';
 
 function App() {
   return (
-    <div className='bg-myLight min-h-screen px-[16px] md:px-[160px] '>
+    <div className='bg-myLight min-h-screen select-none px-[16px] md:px-[160px]'>
       <Home />
       <BackToTop
         style={{

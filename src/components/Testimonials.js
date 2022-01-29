@@ -21,10 +21,10 @@ function Testimonials() {
         Testimonials
       </h1>
       {/* Desktop view */}
-      <div className='hidden flex-wrap gap-[40px] xl:flex'>
+      <div className='hidden justify-between gap-[40px] lg:flex'>
         {testimonials.map((item, index) => {
           return (
-            <div className='space-y-[40px]' key={index}>
+            <div className=' space-y-[40px]' key={index}>
               <div>
                 <p className='text-[18px] font-normal italic leading-[27.36px]'>
                   "{item.testimonial}"
@@ -69,50 +69,52 @@ function Testimonials() {
       </div>
 
       {/* Mobile view */}
-      <Slider {...settings}>
-        {testimonials.map((item, index) => {
-          return (
-            <div className='space-y-[40px]' key={index}>
-              <div>
-                <p className='text-[18px] font-normal italic leading-[27.36px]'>
-                  "{item.testimonial}"
-                </p>
-              </div>
-              <div className='flex items-center gap-[16px]'>
+      <div className='lg:hidden'>
+        <Slider {...settings}>
+          {testimonials.map((item, index) => {
+            return (
+              <div className='space-y-[40px]' key={index}>
                 <div>
-                  <img
-                    className='h-[64px] w-[64px] rounded-full object-cover'
-                    src={item.img}
-                    alt='profile_pic'
-                  />
+                  <p className='text-[18px] font-normal italic leading-[27.36px]'>
+                    "{item.testimonial}"
+                  </p>
                 </div>
-                <div className='space-y-[4px]'>
-                  <div className='flex gap-[10.5px]'>
-                    <p className='text-[20px] font-semibold xl:font-medium'>
-                      {item.name}
-                    </p>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      viewBox='0 0 24 24'
-                      width='24'
-                      height='24'
-                    >
-                      <path fill='none' d='M0 0h24v24H0z' />
-                      <path
-                        d='M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z'
-                        fill='rgba(246,73,13,1)'
-                      />
-                    </svg>
-                  </div>
+                <div className='flex items-center gap-[16px]'>
                   <div>
-                    <p>{item.post}</p>
+                    <img
+                      className='h-[64px] w-[64px] rounded-full object-cover'
+                      src={item.img}
+                      alt='profile_pic'
+                    />
+                  </div>
+                  <div className='space-y-[4px]'>
+                    <div className='flex gap-[10.5px]'>
+                      <p className='text-[20px] font-semibold xl:font-medium'>
+                        {item.name}
+                      </p>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        viewBox='0 0 24 24'
+                        width='24'
+                        height='24'
+                      >
+                        <path fill='none' d='M0 0h24v24H0z' />
+                        <path
+                          d='M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z'
+                          fill='rgba(246,73,13,1)'
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <p>{item.post}</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
-      </Slider>
+            );
+          })}
+        </Slider>
+      </div>
     </div>
   );
 }
