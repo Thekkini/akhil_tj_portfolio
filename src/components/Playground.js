@@ -26,7 +26,7 @@ function Playground() {
             return (
               <img
                 key={index}
-                className='h-[333px] w-full rounded object-cover'
+                className='h-[333px] w-[333px] rounded object-cover'
                 src={item.img}
                 alt='playground'
               />
