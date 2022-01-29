@@ -6,12 +6,12 @@ import Slider from 'react-slick';
 
 function Playground() {
   var settings = {
-    // dots: true,
+    dots: true,
     pauseOnFocus: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     infinite: true,
-    speed: 1000,
+
     slidesToShow: 1,
     slidesToScroll: 1,
   };

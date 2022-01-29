@@ -91,4 +91,31 @@ export const playground = [
   },
 ];
 
+//Data for testimonials in the home page
+export const testimonials = [
+  {
+    img: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+    link: '/',
+    name: 'Kim Jones',
+    post: 'Design Mentor, FOFK',
+    testimonial:
+      'Skilled in leadership, seeking to leverage solid design skills with a focus on collaboration, communication and passion.',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+    link: '/',
+    name: 'Tim Cook',
+    post: 'Product Manager, Peeps',
+    testimonial:
+      'When you are joyful, when you say yes to life and have func and project positivity all around you, you become a sun in the center of every constellation, and people want to be near you.',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+    link: '/',
+    name: 'Zameel Pichen',
+    testimonial:
+      "Inspiration comes from within yourself. One has to be positive. When you're positive, good things happen.",
+  },
+];
+
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
