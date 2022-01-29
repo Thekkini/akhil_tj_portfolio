@@ -3,7 +3,7 @@ import Project from './Project';
 
 function Projects() {
   return (
-    <div>
+    <div className='pt-[140px] xl:pt-[180px]'>
       <Project />
     </div>
   );

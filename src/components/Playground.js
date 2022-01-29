@@ -21,12 +21,12 @@ function Playground() {
 
       {/* Desktop view */}
       <div>
-        <div className='hidden  grid-cols-3 gap-[24px] lg:grid'>
+        <div className='hidden  grid-cols-3 gap-[24px] xl:grid'>
           {playground.map((item, index) => {
             return (
               <img
                 key={index}
-                className='h-[333px] w-[333px] rounded object-cover'
+                className='h-[333px] w-full rounded object-cover'
                 src={item.img}
                 alt='playground'
               />
@@ -36,7 +36,7 @@ function Playground() {
       </div>
 
       {/* Mobile view */}
-      <div className='lg:hidden'>
+      <div className='xl:hidden'>
         <Slider {...settings}>
           {playground.map((item, index) => {
             return (

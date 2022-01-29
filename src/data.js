@@ -34,8 +34,9 @@ export const projectCards = [
         point: 'Recieved *237 duplicated* and 7 favourites in figma community',
       },
     ],
-    link: '/',
+
     type: 'phone',
+    button: [{ name: 'View Project', link: '/' }],
   },
   {
     id: 2,
@@ -49,8 +50,8 @@ export const projectCards = [
         point: 'Happy Clients :)',
       },
     ],
-    link: '/',
     type: 'phone',
+    button: [{ name: 'View Project', link: '/' }],
   },
   {
     id: 3,
@@ -64,8 +65,11 @@ export const projectCards = [
         point: 'Recieved *237 duplicated* and 7 favourites in figma community',
       },
     ],
-    link: '/',
     type: 'phone',
+    button: [
+      { name: 'View Project', link: '/' },
+      { name: 'View Demo', link: '/' },
+    ],
   },
 ];
 
@@ -119,6 +123,5 @@ export const testimonials = [
 ];
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
 
 //>>>>>>>>>>>>>>>>>>>DATA USED IN ABOUT-PAGE<<<<<<<<<<<<<<<<<<<<<<<

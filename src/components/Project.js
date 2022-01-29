@@ -24,7 +24,7 @@ function Project() {
   //   };
 
   return (
-    <div className='pt-[168.5px]'>
+    <div className=''>
       {projectCards.map((item, index) => {
         return (
           <div
@@ -52,8 +52,20 @@ function Project() {
                   })}
                 </ul>
               </div>
-              <div className='button border-myRed mt-[28px] flex cursor-pointer items-center justify-center rounded-[4px] border-[1.5px] py-[16px] xl:mt-[32px] xl:max-w-[151px]'>
-                <p className='text-myRed'>View Project</p>
+              <div className='flex items-start justify-start gap-[16px] '>
+                {item.button.map((button, index) => {
+                  return (
+                    <a
+                      className='w-full xl:w-fit'
+                      href={button.link}
+                      key={index}
+                    >
+                      <button className='button border-myRed mt-[28px] flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px] xl:mt-[32px] xl:w-fit '>
+                        <p className='text-myRed'>{button.name}</p>
+                      </button>
+                    </a>
+                  );
+                })}
               </div>
             </div>
           </div>

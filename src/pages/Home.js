@@ -9,8 +9,8 @@ function Home() {
     <div>
       <Hero />
       <Projects />
-      <Playground />
-      <Testimonials />
+      {/* <Playground />
+      <Testimonials /> */}
     </div>
   );
 }

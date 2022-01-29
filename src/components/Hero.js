@@ -3,7 +3,7 @@ import { socialMedia } from '../data';
 
 function Hero() {
   return (
-    <div className='pt-[66px] md:pt-[203px]'>
+    <div className='pt-[140px] xl:pt-[265px]'>
       <div>
         <p className='main-para pb-[4px]'>
           Hello, <span className='text-myRed'>I'm Akhil TJ.</span>
@@ -11,7 +11,7 @@ function Hero() {
         <h1 className='main-heading w-min pb-[4px] md:w-1/2'>
           Junior Designer, Specializing in UI/UX
         </h1>
-        <p className='main-para pr-[30px]'>
+        <p className='main-para '>
           <span className='text-myRed'>My Philosophy</span>: "Add value to
           things, to people and to myself."
         </p>
