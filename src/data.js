@@ -1,4 +1,4 @@
-//>>>>>>>>>>>>>>>>>>>Data used in homepage<<<<<<<<<<<<<<<<<<<<<<<
+//>>>>>>>>>>>>>>>>>>>DATA USED IN HOME-PAGE<<<<<<<<<<<<<<<<<<<<<<<
 
 //Data for social media links on hero section of home page
 export const socialMedia = [
@@ -119,3 +119,6 @@ export const testimonials = [
 ];
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+//>>>>>>>>>>>>>>>>>>>DATA USED IN ABOUT-PAGE<<<<<<<<<<<<<<<<<<<<<<<
