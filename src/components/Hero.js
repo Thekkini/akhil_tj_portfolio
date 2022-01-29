@@ -44,7 +44,7 @@ function Hero() {
             );
           })}
         </div>
-        <div className='hidden md:flex'>
+        <div className='hidden xl:flex'>
           <p className='button'>Scroll Down</p>
         </div>
       </div>
