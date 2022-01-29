@@ -25,5 +25,7 @@
 }
 
 .button {
-  @apply text-[14px] font-semibold uppercase text-myRed;
+  @apply text-[14px] font-semibold uppercase cursor-pointer text-myRed;
 }
+
+

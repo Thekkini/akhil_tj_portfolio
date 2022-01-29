@@ -20,17 +20,19 @@ function Playground() {
       <h1 className='sub-heading pb-[32px]'>Playground</h1>
 
       {/* Desktop view */}
-      <div className='hidden flex-wrap gap-[24px] lg:flex'>
-        {playground.map((item, index) => {
-          return (
-            <img
-              key={index}
-              className='h-[333px] w-[333px] rounded object-cover'
-              src={item.img}
-              alt='playground'
-            />
-          );
-        })}
+      <div>
+        <div className='hidden  grid-cols-3 gap-[24px] lg:grid'>
+          {playground.map((item, index) => {
+            return (
+              <img
+                key={index}
+                className='h-[333px] w-full rounded object-cover'
+                src={item.img}
+                alt='playground'
+              />
+            );
+          })}
+        </div>
       </div>
 
       {/* Mobile view */}

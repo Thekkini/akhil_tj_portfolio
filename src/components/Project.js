@@ -52,7 +52,7 @@ function Project() {
                   })}
                 </ul>
               </div>
-              <div className='button border-myRed mt-[28px] flex items-center justify-center rounded-[4px] border-[1.5px] py-[16px] xl:mt-[32px] xl:max-w-[151px]'>
+              <div className='button border-myRed mt-[28px] flex cursor-pointer items-center justify-center rounded-[4px] border-[1.5px] py-[16px] xl:mt-[32px] xl:max-w-[151px]'>
                 <p>View Project</p>
               </div>
             </div>

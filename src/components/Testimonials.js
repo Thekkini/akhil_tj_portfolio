@@ -21,7 +21,7 @@ function Testimonials() {
         Testimonials
       </h1>
       {/* Desktop view */}
-      <div className='hidden justify-between gap-[40px] lg:flex'>
+      <div className='hidden grid-cols-3 gap-[40px] lg:grid'>
         {testimonials.map((item, index) => {
           return (
             <div className=' space-y-[40px]' key={index}>
