@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { playground } from '../data';
-
 
 import {
   CarouselProvider,
@@ -12,6 +11,7 @@ import {
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 function Playground() {
+  const [num, setNum] = useState(0);
   return (
     <div className='pt-[145px] pb-[32px] xl:pt-[180px]'>
       <h1 className='sub-heading pb-[32px]'>Playground</h1>
@@ -38,6 +38,9 @@ function Playground() {
           naturalSlideWidth={100}
           naturalSlideHeight={125}
           totalSlides={6}
+          lockOnWindowScroll={true}
+          touchEnabled={false}
+          isIntrinsicHeight={true}
         >
           <Slider>
             {playground.map((item, index) => {
@@ -53,15 +56,36 @@ function Playground() {
             })}
           </Slider>
 
-          <div className='grid grid-cols-2 gap-[16px]'>
-            <ButtonBack>
-              <button className='button border-myRed flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]'>
-                <p className='text-myRed'> Previous</p>
+          <div className='mt-[32px] grid grid-cols-2 gap-[16px]'>
+            <ButtonBack onClick={() => setNum(num - 1)}>
+              <button
+                className={`button ${
+                  num === 0 ? 'border-myRedLight' : 'border-myRed'
+                } flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]`}
+              >
+                <p
+                  className={`  ${
+                    num === 0 ? 'text-myRedLight' : 'text-myRed'
+                  }`}
+                >
+                  Previous
+                </p>
               </button>
             </ButtonBack>
-            <ButtonNext>
-              <button className='button border-myRed flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]'>
-                <p className='text-myRed'>Next</p>
+
+            <ButtonNext onClick={() => setNum(num + 1)}>
+              <button
+                className={`1button ${
+                  num === 5 ? 'border-myRedLight' : 'border-myRed'
+                } flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]`}
+              >
+                <p
+                  className={`  ${
+                    num === 5 ? 'text-myRedLight' : 'text-myRed'
+                  }`}
+                >
+                  Next
+                </p>
               </button>
             </ButtonNext>
           </div>
