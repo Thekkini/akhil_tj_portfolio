@@ -1,20 +1,17 @@
 import React from 'react';
 import { playground } from '../data';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Slider from 'react-slick';
+
+
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
 function Playground() {
-  var settings = {
-    dots: true,
-    pauseOnFocus: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    infinite: true,
-
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
   return (
     <div className='pt-[145px] pb-[32px] xl:pt-[180px]'>
       <h1 className='sub-heading pb-[32px]'>Playground</h1>
@@ -37,19 +34,38 @@ function Playground() {
 
       {/* Mobile view */}
       <div className='xl:hidden'>
-        <Slider {...settings}>
-          {playground.map((item, index) => {
-            return (
-              <div>
-                <img
-                  className='h-[343px] w-full object-cover'
-                  src={item.img}
-                  alt='playground'
-                />
-              </div>
-            );
-          })}
-        </Slider>
+        <CarouselProvider
+          naturalSlideWidth={100}
+          naturalSlideHeight={125}
+          totalSlides={6}
+        >
+          <Slider>
+            {playground.map((item, index) => {
+              return (
+                <Slide index={index}>
+                  <img
+                    className='h-[343px] w-full object-cover'
+                    src={item.img}
+                    alt='playground'
+                  />
+                </Slide>
+              );
+            })}
+          </Slider>
+
+          <div className='grid grid-cols-2 gap-[16px]'>
+            <ButtonBack>
+              <button className='button border-myRed flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]'>
+                <p className='text-myRed'> Previous</p>
+              </button>
+            </ButtonBack>
+            <ButtonNext>
+              <button className='button border-myRed flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]'>
+                <p className='text-myRed'>Next</p>
+              </button>
+            </ButtonNext>
+          </div>
+        </CarouselProvider>
       </div>
     </div>
   );
