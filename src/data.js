@@ -20,7 +20,7 @@ export const socialMedia = [
   },
 ];
 
-// Data for the project section of home page
+// >>>>>>>Data for the project section of home page<<<<<<<<<<
 //While adding new project data make sure to get the id number correct
 //
 //
@@ -79,7 +79,7 @@ export const projectCards = [
   },
 ];
 
-//Data for playground section of home page
+//>>>>>>>>>>>>Data for playground section of home page<<<<<<<<<<<<
 export const playground = [
   {
     img: 'https://images.unsplash.com/photo-1628260412297-a3377e45006f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
@@ -101,7 +101,7 @@ export const playground = [
   },
 ];
 
-//Data for testimonials in the home page
+//>>>>>>>>>>>>Data for testimonials in the home page<<<<<<<<<<<<
 export const testimonials = [
   {
     img: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
