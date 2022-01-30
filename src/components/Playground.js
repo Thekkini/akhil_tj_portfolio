@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { playground } from '../data';
-
+import Page from './Page';
 import {
   CarouselProvider,
   Slider,
@@ -33,7 +33,15 @@ function Playground() {
       </div>
 
       {/* Mobile view */}
-      <div className='xl:hidden'>
+      <div className='relative xl:hidden'>
+        <div className='absolute top-[8px] left-[8px] z-50'>
+          <Page
+            currentPage={num + 1}
+            maxPage={playground.length}
+            bgCol={'bg-myLight'}
+            textCol={'text-black'}
+          />
+        </div>
         <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={125}

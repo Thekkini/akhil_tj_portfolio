@@ -8,6 +8,7 @@ import {
   ButtonNext,
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import Page from './Page';
 
 function Testimonials() {
   const [num, setNum] = useState(0);
@@ -67,6 +68,14 @@ function Testimonials() {
 
       {/* Mobile view */}
       <div className='lg:hidden'>
+        <div className='mb-[24px]'>
+          <Page
+            currentPage={num + 1}
+            maxPage={testimonials.length}
+            bgCol={'bg-black'}
+            textCol={'text-white'}
+          />
+        </div>
         <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={90}
