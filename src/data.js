@@ -21,6 +21,12 @@ export const socialMedia = [
 ];
 
 // Data for the project section of home page
+//While adding new project data make sure to get the id number correct
+//
+//
+//To add more than one button add button object data with 'name' and 'link' and their values as an array. Example given below
+//Example:>>>>
+//  button: [{name:'button1', link: 'https://twitter.com'}, {name:'button2', link: 'https://twitter.com'}]
 export const projectCards = [
   {
     id: 1,
@@ -122,6 +128,47 @@ export const testimonials = [
   },
 ];
 
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 //>>>>>>>>>>>>>>>>>>>DATA USED IN ABOUT-PAGE<<<<<<<<<<<<<<<<<<<<<<<
+export const aboutData = {
+  aboutMyself: {
+    heading: "Hi there, my name is Akhil TJ and I'm a UI/UX Designer",
+    philosophy: 'Add value to things to people and to myself',
+    bio: 'I am ambitious and driven. I thrive on challenge and constantly set goals for myself, so I have something to strive towards. I’m not comfortable with settling, and I’m always looking for an opportunity to do better and achieve greatness.',
+  },
+  skillHeading: {
+    heading: "It's incredible when skills and passion come together",
+  },
+  mySkills: {
+    skills: [
+      'User Interface Design',
+      'Wireframing',
+      'Rapid Prototyping',
+      'Design Thinking',
+      'Design System',
+      'User Experience Design',
+    ],
+    tools: [
+      'Adobe XD',
+      'Figma',
+      'Miro',
+      'Canva',
+      'Ms Word',
+      'GIT/GITHUB',
+      'Trello',
+      'Adobe Photoshop',
+      'Notion',
+    ],
+    technology: [
+      'html',
+      'css',
+      'javascript',
+      'flutter',
+      'kotlin',
+      'android',
+      'c',
+      'c++',
+    ],
+  },
+};
