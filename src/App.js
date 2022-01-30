@@ -3,13 +3,13 @@ import BackToTop from 'react-custom-back-to-top-button';
 import Home from './pages/Home';
 import About from './pages/About';
 import Header from './components/Header';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='bg-myLight min-h-screen select-none px-[16px] md:px-[160px]'>
+    <div className='bg-myLight min-h-screen select-none '>
       <BrowserRouter>
         <ScrollToTop>
           <Header />
@@ -30,7 +30,9 @@ function App() {
               filter: 'drop-shadow(0 1px 1px rgb(0 0 0 / 0.05))',
             }}
           />
-          <Footer />
+          {/* <div>
+            <Footer />
+          </div> */}
         </ScrollToTop>
       </BrowserRouter>
     </div>

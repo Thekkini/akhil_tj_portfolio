@@ -2,10 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+.main-heading {
+  @apply text-myBlue text-[44px] font-extrabold leading-[60px] lg:text-[56px] lg:leading-[78px];
+}
+
+.sub-heading {
+  @apply text-myBlue text-[32px] font-bold leading-[34.32px] lg:leading-[48px];
+}
+
+.main-para {
+  @apply text-[22px] font-medium leading-[34.32px] lg:text-[24px] lg:leading-[35.52px];
+}
+
+.para {
+  @apply text-[18px] font-normal leading-[27.36px];
+}
+
+.button {
+  @apply cursor-pointer text-[14px] font-semibold uppercase;
+}
+
 @layer base {
   * {
     font-family: 'Montserrat', sans-serif;
   }
+
   ::-webkit-scrollbar {
     width: 5px;
   }
@@ -29,24 +50,4 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #f6490d;
   }
-}
-
-.main-heading {
-  @apply text-myBlue text-[44px] font-extrabold leading-[60px] md:text-[56px] md:leading-[78px];
-}
-
-.sub-heading {
-  @apply text-myBlue text-[32px] font-bold leading-[34.32px] md:leading-[35.52px];
-}
-
-.main-para {
-  @apply text-[22px] font-medium leading-[34.32px] md:text-[24px] md:leading-[35.52px];
-}
-
-.para {
-  @apply text-[18px] font-normal leading-[27.36px];
-}
-
-.button {
-  @apply cursor-pointer text-[14px] font-semibold uppercase;
 }

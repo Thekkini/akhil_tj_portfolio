@@ -6,7 +6,7 @@ import Testimonials from '../components/Testimonials';
 
 function Home() {
   return (
-    <div>
+    <div className='px-[16px] md:px-[160px]'>
       <Hero />
       <Projects />
       <Playground />
