@@ -66,35 +66,47 @@ function Playground() {
 
           <div className='mt-[32px] grid grid-cols-2 gap-[16px]'>
             <ButtonBack onClick={() => setNum(num - 1)}>
-              <button
-                className={`button ${
-                  num === 0 ? 'border-myRedLight' : 'border-myRed'
-                } flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]`}
-              >
-                <p
-                  className={`  ${
-                    num === 0 ? 'text-myRedLight' : 'text-myRed'
-                  }`}
+              <div className='group'>
+                <button
+                  className={`button ${
+                    num === 0
+                      ? 'border-myRedLight'
+                      : 'border-myRed group-hover:bg-myRed'
+                  } flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]`}
                 >
-                  Previous
-                </p>
-              </button>
+                  <p
+                    className={`  ${
+                      num === 0
+                        ? 'text-myRedLight'
+                        : 'text-myRed group-hover:text-myLight'
+                    }`}
+                  >
+                    Previous
+                  </p>
+                </button>
+              </div>
             </ButtonBack>
 
             <ButtonNext onClick={() => setNum(num + 1)}>
-              <button
-                className={`1button ${
-                  num === 5 ? 'border-myRedLight' : 'border-myRed'
-                } flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]`}
-              >
-                <p
-                  className={`  ${
-                    num === 5 ? 'text-myRedLight' : 'text-myRed'
-                  }`}
+              <div className='group'>
+                <button
+                  className={`1button ${
+                    num === 5
+                      ? 'border-myRedLight'
+                      : 'border-myRed group-hover:bg-myRed'
+                  } flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]`}
                 >
-                  Next
-                </p>
-              </button>
+                  <p
+                    className={`  ${
+                      num === 5
+                        ? 'text-myRedLight'
+                        : 'text-myRed group-hover:text-myLight'
+                    }`}
+                  >
+                    Next
+                  </p>
+                </button>
+              </div>
             </ButtonNext>
           </div>
         </CarouselProvider>

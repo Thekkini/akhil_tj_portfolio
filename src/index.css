@@ -22,6 +22,10 @@
   @apply cursor-pointer text-[14px] font-semibold uppercase;
 }
 
+/* .button-parent-hover {
+  @apply hover:border-0 hover:bg-myRed 
+} */
+
 @layer base {
   * {
     font-family: 'Montserrat', sans-serif;
