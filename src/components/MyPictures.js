@@ -14,7 +14,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 function MyPictures() {
   const [num, setNum] = useState(0);
   return (
-    <div className='px-[16px] pb-[108px] xl:grid xl:grid-cols-2 xl:px-[160px]'>
+    <div className='gap-[20px] px-[16px] pb-[108px] xl:grid xl:grid-cols-2 xl:px-[160px]'>
       <h1 className='sub-heading pb-[108px]  lg:pb-0 '>
         {aboutData.myPictureHeading}
       </h1>
