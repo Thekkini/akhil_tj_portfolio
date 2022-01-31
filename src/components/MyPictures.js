@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { aboutData } from '../data';
+import ImageGallery from 'react-image-gallery';
 import Page from './Page';
 import {
   CarouselProvider,
@@ -13,12 +14,25 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 function MyPictures() {
   const [num, setNum] = useState(0);
   return (
-    <div className='px-[16px] pb-[108px] xl:px-[160px]'>
-      <h1 className='sub-heading pb-[108px] lg:pb-0 '>
+    <div className='px-[16px] pb-[108px] xl:grid xl:grid-cols-2 xl:px-[160px]'>
+      <h1 className='sub-heading pb-[108px]  lg:pb-0 '>
         {aboutData.myPictureHeading}
       </h1>
       {/* Desktop View */}
-      <div className='hidden grid-cols-2 gap-[20px] xl:grid'></div>
+      <div className='hidden xl:grid'>
+        <ImageGallery
+          items={aboutData.myPictures}
+          originalHeight={'36px'}
+          showFullscreenButton={false}
+          useBrowserFullscreen={false}
+          showPlayButton={false}
+          showIndex={true}
+          showBullets={false}
+          showNav={false}
+          onSlide={(e) => console.log(e)}
+        />
+        ;
+      </div>
       {/* Mobile view */}
       <div className='relative xl:hidden'>
         <div className='absolute top-[8px] left-[8px] z-50'>
@@ -43,7 +57,7 @@ function MyPictures() {
                 <Slide index={index}>
                   <img
                     className='h-[343px] w-full object-cover'
-                    src={item.img}
+                    src={item.original}
                     alt='playground'
                   />
                 </Slide>

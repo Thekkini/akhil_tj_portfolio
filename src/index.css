@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '~react-image-gallery/styles/css/image-gallery.css';
+
 .main-heading {
   @apply text-myBlue text-[44px] font-extrabold leading-[60px] lg:text-[56px] lg:leading-[78px];
 }

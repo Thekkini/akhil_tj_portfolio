@@ -38,7 +38,7 @@ function Footer() {
         </div>
       </div>
       {/*Mobile View */}
-      <div className='space-y-[32px]'>
+      <div className='space-y-[32px] xl:hidden'>
         <div className='flex justify-center gap-[24px]'>
           {footer.map((item, index) => {
             return (
