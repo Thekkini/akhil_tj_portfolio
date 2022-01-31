@@ -13,10 +13,12 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 function MyPictures() {
   const [num, setNum] = useState(0);
   return (
-    <div className='px-[16px] xl:px-[160px]'>
+    <div className='px-[16px] pb-[108px] xl:px-[160px]'>
       <h1 className='sub-heading pb-[108px] lg:pb-0 '>
         {aboutData.myPictureHeading}
       </h1>
+      {/* Desktop View */}
+      <div className='hidden grid-cols-2 gap-[20px] xl:grid'></div>
       {/* Mobile view */}
       <div className='relative xl:hidden'>
         <div className='absolute top-[8px] left-[8px] z-50'>
@@ -69,12 +71,12 @@ function MyPictures() {
             <ButtonNext onClick={() => setNum(num + 1)}>
               <button
                 className={`1button ${
-                  num === 5 ? 'border-myRedLight' : 'border-myRed'
+                  num === 3 ? 'border-myRedLight' : 'border-myRed'
                 } flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]`}
               >
                 <p
                   className={`  ${
-                    num === 5 ? 'text-myRedLight' : 'text-myRed'
+                    num === 3 ? 'text-myRedLight' : 'text-myRed'
                   }`}
                 >
                   Next

@@ -3,7 +3,7 @@ import BackToTop from 'react-custom-back-to-top-button';
 import Home from './pages/Home';
 import About from './pages/About';
 import Header from './components/Header';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
@@ -30,9 +30,9 @@ function App() {
               filter: 'drop-shadow(0 1px 1px rgb(0 0 0 / 0.05))',
             }}
           />
-          {/* <div>
+          <div>
             <Footer />
-          </div> */}
+          </div>
         </ScrollToTop>
       </BrowserRouter>
     </div>
