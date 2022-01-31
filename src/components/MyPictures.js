@@ -22,7 +22,8 @@ function MyPictures() {
       <div className='hidden xl:grid'>
         <ImageGallery
           items={aboutData.myPictures}
-          originalHeight={'36px'}
+          originalHeight={547}
+          thumbnailHeight={175}
           showFullscreenButton={false}
           useBrowserFullscreen={false}
           showPlayButton={false}
