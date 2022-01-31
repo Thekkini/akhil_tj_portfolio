@@ -4,14 +4,14 @@ import { aboutData } from '../data';
 function AboutHero() {
   return (
     <div className='px-0 lg:px-[160px]'>
-      <div className=' lg:grid lg:grid-cols-2'>
+      <div className=' gap-[-120px]  lg:grid lg:grid-cols-12'>
         <img
-          className=' h-[375px] w-full object-cover lg:h-[503px] '
+          className=' col-span-6 h-[375px] w-full object-cover lg:h-[503px]'
           src={aboutData.aboutMyself.img}
           alt='myPhoto'
         />
 
-        <div className='bg-myLight  px-[16px] pt-[24px]  lg:px-[20x] lg:pt-[20px] '>
+        <div className='bg-myLight z-50 col-span-4 px-[16px] pt-[24px]  lg:px-[20x] lg:pt-[20px] '>
           <h1 className='sub-heading '>{aboutData.aboutMyself.heading}</h1>
           <p className='main-para pt-[4px]'>
             <span className='text-myRed'>My Philosophy</span>: "

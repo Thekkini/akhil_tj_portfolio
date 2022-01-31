@@ -78,8 +78,8 @@ function Testimonials() {
         </div>
         <CarouselProvider
           naturalSlideWidth={100}
-          naturalSlideHeight={90}
-          totalSlides={3}
+          naturalSlideHeight={100}
+          totalSlides={testimonials.length}
           lockOnWindowScroll={true}
           touchEnabled={false}
           isIntrinsicHeight={true}

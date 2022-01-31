@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { playground } from '../data';
+import { aboutData } from '../data';
 import Page from './Page';
 import {
   CarouselProvider,
@@ -10,34 +10,19 @@ import {
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-function Playground() {
+function MyPictures() {
   const [num, setNum] = useState(0);
   return (
-    <div className='pt-[145px] pb-[32px] xl:pt-[180px]'>
-      <h1 className='sub-heading pb-[32px]'>Playground</h1>
-
-      {/* Desktop view */}
-      <div>
-        <div className='hidden  grid-cols-3 gap-[24px] xl:grid'>
-          {playground.map((item, index) => {
-            return (
-              <img
-                key={index}
-                className='h-[333px] w-full rounded object-cover'
-                src={item.img}
-                alt='playground'
-              />
-            );
-          })}
-        </div>
-      </div>
-
+    <div className='px-[16px] xl:px-[160px]'>
+      <h1 className='sub-heading pb-[108px] lg:pb-0 '>
+        {aboutData.myPictureHeading}
+      </h1>
       {/* Mobile view */}
       <div className='relative xl:hidden'>
         <div className='absolute top-[8px] left-[8px] z-50'>
           <Page
             currentPage={num + 1}
-            maxPage={playground.length}
+            maxPage={aboutData.myPictures.length}
             bgCol={'bg-myLight'}
             textCol={'text-black'}
           />
@@ -45,13 +30,13 @@ function Playground() {
         <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={125}
-          totalSlides={playground.length}
+          totalSlides={aboutData.myPictures.length}
           lockOnWindowScroll={true}
           touchEnabled={false}
           isIntrinsicHeight={true}
         >
           <Slider>
-            {playground.map((item, index) => {
+            {aboutData.myPictures.map((item, index) => {
               return (
                 <Slide index={index}>
                   <img
@@ -103,4 +88,4 @@ function Playground() {
   );
 }
 
-export default Playground;
+export default MyPictures;
