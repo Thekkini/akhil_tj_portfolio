@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { socialMedia } from '../data';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Hero() {
+  useEffect(() => {
+    Aos.init({ duration: 1500, once: true });
+  }, []);
   return (
     <div className='pt-[140px] xl:pt-[265px]'>
-      <div>
+      <div data-aos='fade-right'>
         <p className='main-para pb-[4px]'>
           Hello, <span className='text-myRed'>I'm Akhil TJ.</span>
         </p>
@@ -16,7 +21,7 @@ function Hero() {
           things, to people and to myself."
         </p>
       </div>
-      <div className='flex justify-between pt-[201.5px]'>
+      <div data-aos='fade-left' className='flex justify-between pt-[201.5px]'>
         <div className='hidden gap-[26.5px]  md:flex '>
           {socialMedia.map((item, index) => {
             return (

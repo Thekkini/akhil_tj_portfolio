@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { aboutData } from '../data';
+// import Aos from 'aos';
+// import 'aos/dist/aos.css';
 
 function AboutHero() {
+  // useEffect(() => {
+  //   Aos.init({ duration: 1500, once: true });
+  // }, []);
   return (
-    <div className='px-0 lg:px-[160px]'>
-      <div className=' gap-[-120px]  lg:grid lg:grid-cols-12'>
+    <div className='px-0 xl:px-[160px] xl:pt-[80px]'>
+      <div className='grid-cols-2 xl:grid'>
         <img
-          className=' col-span-6 h-[375px] w-full object-cover lg:h-[503px]'
+          className=' aspect-square h-[375px]  w-full object-cover xl:h-[503px]'
           src={aboutData.aboutMyself.img}
           alt='myPhoto'
         />
 
-        <div className='bg-myLight z-50 col-span-4 px-[16px] pt-[24px]  lg:px-[20x] lg:pt-[20px] '>
+        <div className='bg-myLight right-[20px] top-[250px] z-50 mb-[108px] px-[16px] pt-[24px] xl:relative  xl:mb-[400px] xl:max-w-[750px]   '>
           <h1 className='sub-heading '>{aboutData.aboutMyself.heading}</h1>
           <p className='main-para pt-[4px]'>
             <span className='text-myRed'>My Philosophy</span>: "

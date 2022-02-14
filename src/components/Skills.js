@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { aboutData } from '../data';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Skills() {
+  useEffect(() => {
+    Aos.init({ duration: 1500, once: true });
+  }, []);
   return (
-    <div className='px-[16px] pt-[108px] pb-[108px] lg:px-[160px] lg:pb-[180px] lg:pt-[180px]'>
+    <div
+      
+      className='px-[16px]  pb-[108px] lg:px-[160px] lg:pb-[180px] lg:pt-[180px]'
+    >
       <div className='grid-cols-2 gap-[20px] lg:grid'>
         <h1 className='sub-heading pb-[108px] lg:pb-0 '>
           {aboutData.skillHeading.heading}
