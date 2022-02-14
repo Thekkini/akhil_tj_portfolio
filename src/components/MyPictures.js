@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { aboutData } from '../data';
-import ImageGallery from 'react-image-gallery';
+import { aboutData, myPictures } from '../data';
 import Page from './Page';
 import {
   CarouselProvider,
@@ -12,6 +11,10 @@ import {
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 function MyPictures() {
+  const [imgOne, setImgOne] = useState(0);
+  const [imgTwo, setImgTwo] = useState(1);
+  const [imgThree, setImgThree] = useState(2);
+  const [imgFour, setImgFour] = useState(3);
   const [num, setNum] = useState(0);
   return (
     <div className='gap-[20px] px-[16px] pb-[108px] xl:grid xl:grid-cols-2 xl:px-[160px]'>
@@ -20,19 +23,23 @@ function MyPictures() {
       </h1>
       {/* Desktop View */}
       <div className='hidden xl:grid'>
-        <ImageGallery
-          items={aboutData.myPictures}
-          originalHeight={547}
-          thumbnailHeight={175}
-          showFullscreenButton={false}
-          useBrowserFullscreen={false}
-          showPlayButton={false}
-          showIndex={true}
-          showBullets={false}
-          showNav={false}
-          onSlide={(e) => console.log(e)}
-        />
-        ;
+        <div>
+          <img src={myPictures[imgOne].img} alt='' />
+        </div>
+        <div className='flex'>
+          <div>
+            {' '}
+            <img src={myPictures[imgTwo].img} alt='' />
+          </div>
+          <div>
+            {' '}
+            <img src={myPictures[imgThree].img} alt='' />
+          </div>
+          <div>
+            {' '}
+            <img src={myPictures[imgFour].img} alt='' />
+          </div>
+        </div>
       </div>
       {/* Mobile view */}
       <div className='relative xl:hidden'>
