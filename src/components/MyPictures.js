@@ -16,7 +16,6 @@ function MyPictures() {
   const [imgThree, setImgThree] = useState(2);
   const [imgFour, setImgFour] = useState(3);
   const [num, setNum] = useState(0);
-  console.log(aboutData.myPictures[0].img);
   return (
     <div className='gap-[20px] px-[16px] pb-[108px] xl:grid xl:grid-cols-2 xl:px-[160px]'>
       <h1 className='sub-heading pb-[108px]  lg:pb-0 '>

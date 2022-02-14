@@ -12,7 +12,7 @@ function App() {
     <div className='bg-myLight min-h-screen select-none '>
       <BrowserRouter>
         <ScrollToTop>
-          <Header />
+          <Header  />
           <Switch>
             <Route exact path='/' component={Home}>
               <Home />

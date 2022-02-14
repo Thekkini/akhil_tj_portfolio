@@ -56,19 +56,21 @@ export default function Example() {
                   </Link>
 
                   <div className='hidden lg:block'>
-                    <div className=' flex items-baseline space-x-[64px]'>
-                      {navigation.map((item) => (
-                        <div>
-                          <a
-                            key={item.name}
-                            href={item.href}
-                            className='text-myBlue hover:text-myRed active:text-myRed text-[16px] font-semibold transition delay-100 ease-in-out'
-                            aria-current={item.current ? 'page' : undefined}
-                          >
-                            {item.name}
-                          </a>
-                        </div>
-                      ))}
+                    <div className=' flex  items-baseline '>
+                      <div className='flex gap-16'>
+                        <a
+                          href='/'
+                          className='text-myBlue hover:text-myRed active:text-myRed text-[16px] font-semibold transition delay-100 ease-in-out'
+                        >
+                          Home
+                        </a>
+                        <a
+                          href='/about'
+                          className='text-myBlue hover:text-myRed active:text-myRed text-[16px] font-semibold transition delay-100 ease-in-out'
+                        >
+                          About
+                        </a>
+                      </div>
                     </div>
                   </div>
 
