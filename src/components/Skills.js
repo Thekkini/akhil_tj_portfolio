@@ -8,10 +8,7 @@ function Skills() {
     Aos.init({ duration: 1500, once: true });
   }, []);
   return (
-    <div
-      
-      className='px-[16px]  pb-[108px] lg:px-[160px] lg:pb-[180px] lg:pt-[180px]'
-    >
+    <div className='px-[16px]  pb-[108px] lg:px-[160px] lg:pb-[180px] lg:pt-[180px]'>
       <div className='grid-cols-2 gap-[20px] lg:grid'>
         <h1 className='sub-heading pb-[108px] lg:pb-0 '>
           {aboutData.skillHeading.heading}
@@ -25,7 +22,7 @@ function Skills() {
                   <div className='flex '>
                     <div
                       key={index}
-                      className='bg-myRedLight rounded-[4px] px-[9px] py-[5px]'
+                      className='bg-myRedVeryLight rounded-[4px] px-[9px] py-[5px]'
                     >
                       <p className='button text-myRed'>{skill}</p>
                     </div>
@@ -42,7 +39,7 @@ function Skills() {
                   <div className='flex '>
                     <div
                       key={index}
-                      className='bg-myRedLight rounded-[4px] px-[9px] py-[5px]'
+                      className='bg-myRedVeryLight rounded-[4px] px-[9px] py-[5px]'
                     >
                       <p className='button text-myRed'>{tool}</p>
                     </div>
@@ -59,7 +56,7 @@ function Skills() {
                   <div className='flex '>
                     <div
                       key={index}
-                      className='bg-myRedLight rounded-[4px] px-[9px] py-[5px]'
+                      className='bg-myRedVeryLight rounded-[4px] px-[9px] py-[5px]'
                     >
                       <p className='button text-myRed'>{tech}</p>
                     </div>

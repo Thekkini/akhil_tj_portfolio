@@ -11,10 +11,11 @@ function Hero() {
     <div className='pt-[140px] xl:pt-[265px]'>
       <div data-aos='fade-right'>
         <p className='main-para pb-[4px]'>
-          Hello, <span className='text-myRed'>I'm Akhil TJ.</span>
+          Hello, I'm <span className='text-myRed'> Akhil TJ.</span>
         </p>
-        <h1 className='main-heading w-min pb-[4px] md:w-1/2'>
-          Junior Designer, Specializing in UI/UX
+        <h1 className='main-heading  pb-[4px] md:w-1/2'>
+          <span className='outline_text'>Enthusiastic</span>{' '}
+          <span>UX Designer</span>
         </h1>
         <p className='main-para '>
           <span className='text-myRed'>My Philosophy</span>: "Add value to

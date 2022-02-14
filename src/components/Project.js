@@ -50,6 +50,9 @@ function Project() {
               <h1 className='sub-heading pt-[32px] xl:pt-[0px]'>
                 {item.heading}
               </h1>
+              <h4 className='project-subheading pt-[16px]'>
+                {item.subheading}
+              </h4>
               <p className='para pt-[16px]'>{item.description}</p>
               <div className='para pt-[28px] xl:pt-[32px]'>
                 <ul className='list-disc pl-[24px]'>
@@ -66,7 +69,7 @@ function Project() {
                       href={button.link}
                       key={index}
                     >
-                      <button className='button mt-[28px] flex w-full cursor-pointer items-center justify-center  rounded-[4px] border-[1.5px] border-myRed py-[16px] px-[24px] group-hover:bg-myRed xl:mt-[32px] xl:w-fit '>
+                      <button className='button border-myRed group-hover:bg-myRed mt-[28px] flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px] xl:mt-[32px] xl:w-fit '>
                         <p className='text-myRed group-hover:text-myLight'>
                           {button.name}
                         </p>

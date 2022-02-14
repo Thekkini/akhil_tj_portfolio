@@ -114,7 +114,9 @@ export const projectCards = [
   {
     id: 1,
     img: 'https://uitemplate.net/wp-content/uploads/2021/08/Sleep-App-UI-Kit-Free.png',
+
     heading: 'Ctracker',
+    subheading: 'UX Case study / Visual Design',
     description:
       'Maintaining records of staff, customers  and visitors contact tracing purposes, as set out in the Government guidance due to COVID-19.',
     points: [
@@ -131,6 +133,7 @@ export const projectCards = [
     id: 2,
     img: 'https://uitemplate.net/wp-content/uploads/2021/08/Sleep-App-UI-Kit-Free.png',
     heading: 'Livangle',
+    subheading: 'UX Case study / Visual Design',
     description:
       'Livangle is an online e-commerce platform for your choice of business(Eg: Online Shopping, Healthcare, Food & Beverage etc) based in UAE & India. ',
     points: [
@@ -146,6 +149,7 @@ export const projectCards = [
     id: 3,
     img: 'https://uitemplate.net/wp-content/uploads/2021/08/Sleep-App-UI-Kit-Free.png',
     heading: 'TT Club',
+    subheading: 'UX Case study / Visual Design',
     description:
       'Maintaining records of staff, customers  and visitors contact tracing purposes, as set out in the Government guidance due to COVID-19.',
     points: [

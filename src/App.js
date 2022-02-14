@@ -25,8 +25,8 @@ function App() {
             style={{
               bottom: '20px',
               right: '30px',
-              backgroundColor: '#fff',
-              color: '#F6490D',
+              backgroundColor: '#F6490D',
+              color: '#FAF9F0',
               filter: 'drop-shadow(0 1px 1px rgb(0 0 0 / 0.05))',
             }}
           />

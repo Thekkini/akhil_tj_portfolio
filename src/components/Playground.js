@@ -99,7 +99,7 @@ function Playground() {
             <ButtonNext onClick={() => setNum(num + 1)}>
               <div className='group'>
                 <button
-                  className={`1button ${
+                  className={`button ${
                     num === 5
                       ? 'border-myRedLight'
                       : 'border-myRed group-hover:bg-myRed'

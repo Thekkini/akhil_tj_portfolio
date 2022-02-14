@@ -27,7 +27,10 @@ function Testimonials() {
       <div className='hidden grid-cols-3 gap-[40px] lg:grid'>
         {testimonials.map((item, index) => {
           return (
-            <div className=' space-y-[40px]' key={index}>
+            <div
+              className='border-myRedVeryLight space-y-[40px] rounded-lg border-2 px-[16px] py-[32px]'
+              key={index}
+            >
               <div>
                 <p className='text-[18px] font-normal italic leading-[27.36px]'>
                   "{item.testimonial}"
@@ -95,7 +98,7 @@ function Testimonials() {
                 {testimonials.map((item, index) => {
                   return (
                     <Slide index={index}>
-                      <div className='space-y-[40px]'>
+                      <div className='border-myRedLight space-y-[40px] rounded-lg border-2 px-[12px] py-[24px]'>
                         <div>
                           <p className='text-[18px] font-normal italic leading-[27.36px]'>
                             "{item.testimonial}"
@@ -165,7 +168,7 @@ function Testimonials() {
               <ButtonNext onClick={() => setNum(num + 1)}>
                 <div>
                   <button
-                    className={`1button ${
+                    className={`button ${
                       num === 2
                         ? 'border-myRedLight'
                         : 'border-myRed group-hover:bg-myRed'
