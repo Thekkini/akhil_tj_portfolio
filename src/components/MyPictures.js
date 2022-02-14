@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { aboutData, myPictures } from '../data';
+import { aboutData } from '../data';
 import Page from './Page';
 import {
   CarouselProvider,
@@ -16,28 +16,65 @@ function MyPictures() {
   const [imgThree, setImgThree] = useState(2);
   const [imgFour, setImgFour] = useState(3);
   const [num, setNum] = useState(0);
+  console.log(aboutData.myPictures[0].img);
   return (
     <div className='gap-[20px] px-[16px] pb-[108px] xl:grid xl:grid-cols-2 xl:px-[160px]'>
       <h1 className='sub-heading pb-[108px]  lg:pb-0 '>
         {aboutData.myPictureHeading}
       </h1>
       {/* Desktop View */}
-      <div className='hidden xl:grid'>
+      <div className='hidden space-y-3 xl:grid'>
         <div>
-          <img src={myPictures[imgOne].img} alt='' />
+          <img
+            src={aboutData.myPictures[imgOne].img}
+            className='aspect-square max-h-[547px] w-full'
+            alt=''
+          />
         </div>
-        <div className='flex'>
-          <div>
-            {' '}
-            <img src={myPictures[imgTwo].img} alt='' />
+        <div className='grid grid-cols-3 gap-3'>
+          <div
+            className='bg-slate-100'
+            onClick={() => {
+              setImgThree(2);
+              setImgOne(1);
+              setImgTwo(0);
+              setImgFour(3);
+            }}
+          >
+            <img
+              className='aspect-square  w-full object-cover'
+              src={aboutData.myPictures[imgTwo].img}
+              alt=''
+            />
           </div>
-          <div>
-            {' '}
-            <img src={myPictures[imgThree].img} alt='' />
+          <div
+            className='bg-slate-100'
+            onClick={() => {
+              setImgThree(0);
+              setImgOne(1);
+              setImgTwo(2);
+              setImgFour(3);
+            }}
+          >
+            <img
+              className='aspect-square  w-full object-cover'
+              src={aboutData.myPictures[imgThree].img}
+              alt=''
+            />
           </div>
-          <div>
-            {' '}
-            <img src={myPictures[imgFour].img} alt='' />
+          <div
+            onClick={() => {
+              setImgThree(3);
+              setImgOne(1);
+              setImgTwo(2);
+              setImgFour(0);
+            }}
+          >
+            <img
+              className='aspect-square  w-full object-cover'
+              src={aboutData.myPictures[imgFour].img}
+              alt=''
+            />
           </div>
         </div>
       </div>
@@ -65,7 +102,7 @@ function MyPictures() {
                 <Slide index={index}>
                   <img
                     className='h-[343px] w-full object-cover'
-                    src={item.original}
+                    src={item.img}
                     alt='playground'
                   />
                 </Slide>
