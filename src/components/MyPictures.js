@@ -53,7 +53,7 @@ function MyPictures() {
               setImgThree(0);
               setImgOne(1);
               setImgTwo(2);
-              setImgFour(3);
+              setImgFour(1);
             }}
           >
             <img
