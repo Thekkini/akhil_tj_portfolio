@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { projectCards } from '../data';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Project() {
+  useEffect(() => {
+    Aos.init({ duration: 1500, once: true });
+  }, []);
   //   const [highlight, setHighlight] = useState(false);
   //   const highlighter = (arr) => {
   //     let wordArray = arr.split(' ');
@@ -28,6 +33,7 @@ function Project() {
       {projectCards.map((item, index) => {
         return (
           <div
+            data-aos='fade-up'
             key={index}
             className={`pb-[112px] xl:flex  ${
               item.type === 'phone' ? 'xl:gap-[88px]' : 'xl:gap-[20px]'
@@ -60,7 +66,7 @@ function Project() {
                       href={button.link}
                       key={index}
                     >
-                      <button className='button group-hover:bg-myRed border-myRed mt-[28px] flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px] xl:mt-[32px] xl:w-fit '>
+                      <button className='button mt-[28px] flex w-full cursor-pointer items-center justify-center  rounded-[4px] border-[1.5px] border-myRed py-[16px] px-[24px] group-hover:bg-myRed xl:mt-[32px] xl:w-fit '>
                         <p className='text-myRed group-hover:text-myLight'>
                           {button.name}
                         </p>

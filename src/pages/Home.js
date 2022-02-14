@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
 import Playground from '../components/Playground';
 import Projects from '../components/Projects';
@@ -8,7 +8,9 @@ function Home() {
   return (
     <div className='px-[16px] md:px-[160px]'>
       <Hero />
+
       <Projects />
+
       <Playground />
       <Testimonials />
     </div>

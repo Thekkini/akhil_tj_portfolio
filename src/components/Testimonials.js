@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { testimonials } from '../data';
 import {
   CarouselProvider,
@@ -9,12 +9,17 @@ import {
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Page from './Page';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Testimonials() {
   const [num, setNum] = useState(0);
+  useEffect(() => {
+    Aos.init({ duration: 1500, once: true });
+  }, []);
 
   return (
-    <div className='pb-[140px]'>
+    <div data-aos='fade-right' className='pb-[140px]'>
       <h1 className='sub-heading pb-[32px] pt-[144px] xl:pt-[180px]'>
         Testimonials
       </h1>

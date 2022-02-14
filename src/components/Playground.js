@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { playground } from '../data';
 
 import Page from './Page';
@@ -10,16 +10,24 @@ import {
   ButtonNext,
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Playground() {
   const [num, setNum] = useState(0);
+  useEffect(() => {
+    Aos.init({ duration: 1500, once: true });
+  }, []);
   return (
     <div className='pt-[145px] pb-[32px] xl:pt-[180px]'>
       <h1 className='sub-heading pb-[32px]'>Playground</h1>
 
       {/* Desktop view */}
       <div>
-        <div className='hidden  grid-cols-3 gap-[24px] xl:grid'>
+        <div
+          data-aos='fade-up'
+          className='hidden  grid-cols-3 gap-[24px] xl:grid'
+        >
           {playground.map((item, index) => {
             return (
               <img
@@ -34,7 +42,7 @@ function Playground() {
       </div>
 
       {/* Mobile view */}
-      <div className='relative xl:hidden'>
+      <div data-aos='fade-up' className='relative xl:hidden'>
         <div className='absolute top-[8px] left-[8px] z-50'>
           <Page
             currentPage={num + 1}
