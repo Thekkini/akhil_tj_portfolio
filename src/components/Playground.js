@@ -32,7 +32,7 @@ function Playground() {
             return (
               <img
                 key={index}
-                className='h-[333px] aspect-square w-full rounded object-cover'
+                className=' aspect-square  rounded object-cover'
                 src={item.img}
                 alt='playground'
               />
