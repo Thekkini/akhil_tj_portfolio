@@ -119,12 +119,7 @@ export const projectCards = [
     subheading: 'UX Case study / Visual Design',
     description:
       'Maintaining records of staff, customers  and visitors contact tracing purposes, as set out in the Government guidance due to COVID-19.',
-    points: [
-      { point: 'Flutter QR code scanner application' },
-      {
-        point: 'Recieved *237 duplicated* and 7 favourites in figma community',
-      },
-    ],
+    points: [],
 
     type: 'phone',
     button: [{ name: 'View Project', link: '/' }],
@@ -137,12 +132,7 @@ export const projectCards = [
     subheading: 'UX Case study / Visual Design',
     description:
       'Maintaining records of staff, customers  and visitors contact tracing purposes, as set out in the Government guidance due to COVID-19.',
-    points: [
-      { point: 'Flutter QR code scanner application' },
-      {
-        point: 'Recieved *237 duplicated* and 7 favourites in figma community',
-      },
-    ],
+    points: [],
     type: 'laptop',
     button: [
       { name: 'View Project', link: '/' },
@@ -156,12 +146,7 @@ export const projectCards = [
     subheading: 'UX Case study / Visual Design',
     description:
       'Livangle is an online e-commerce platform for your choice of business(Eg: Online Shopping, Healthcare, Food & Beverage etc) based in UAE & India. ',
-    points: [
-      { point: 'E-commerce Android Application' },
-      {
-        point: 'Happy Clients :)',
-      },
-    ],
+    points: [],
     type: 'phone',
     button: [{ name: 'View Project', link: '/' }],
   },
@@ -172,12 +157,7 @@ export const projectCards = [
     subheading: 'UX Case study / Visual Design',
     description:
       'Maintaining records of staff, customers  and visitors contact tracing purposes, as set out in the Government guidance due to COVID-19.',
-    points: [
-      { point: 'Flutter QR code scanner application' },
-      {
-        point: 'Recieved *237 duplicated* and 7 favourites in figma community',
-      },
-    ],
+    points: [],
     type: 'laptop',
     button: [
       { name: 'View Project', link: '/' },
