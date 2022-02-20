@@ -19,7 +19,7 @@ function Testimonials() {
   }, []);
 
   return (
-    <div data-aos='fade-right' className='pb-[140px]'>
+    <div data-aos='fade-right' className='px-[16px] pb-[140px] xl:px-[160px]'>
       <h1 className='sub-heading pb-[32px] pt-[144px] xl:pt-[180px]'>
         Testimonials
       </h1>
@@ -28,7 +28,7 @@ function Testimonials() {
         {testimonials.map((item, index) => {
           return (
             <div
-              className='space-y-[40px] rounded-lg border-2 border-myRedVeryLight px-[16px] py-[32px]'
+              className='border-myRedVeryLight space-y-[40px] rounded-lg border-2 px-[16px] py-[32px]'
               key={index}
             >
               <div>
@@ -164,7 +164,7 @@ function Testimonials() {
                 {testimonials.map((item, index) => {
                   return (
                     <Slide index={index}>
-                      <div className='space-y-[40px] rounded-lg border-2 border-myRedLight px-[12px] py-[24px]'>
+                      <div className='border-myRedLight space-y-[40px] rounded-lg border-2 px-[12px] py-[24px]'>
                         <div>
                           <p className='text-[18px] font-normal italic leading-[27.36px]'>
                             "{item.testimonial}"

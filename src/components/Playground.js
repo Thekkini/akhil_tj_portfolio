@@ -19,7 +19,7 @@ function Playground() {
     Aos.init({ duration: 1500, once: true });
   }, []);
   return (
-    <div className='pt-[145px] pb-[32px] xl:pt-[180px]'>
+    <div className='pt-[145px] px-[16px] xl:px-[160px] pb-[32px] xl:pt-[180px]'>
       <h1 className='sub-heading pb-[32px]'>Playground</h1>
 
       {/* Desktop view */}

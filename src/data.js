@@ -164,6 +164,63 @@ export const projectCards = [
       { name: 'View Demo', link: '/' },
     ],
   },
+  {
+    id: 4,
+    img: './images/mockLaptop.png',
+    heading: 'TT Club',
+    subheading: 'UX Case study / Visual Design',
+    description:
+      'Maintaining records of staff, customers  and visitors contact tracing purposes, as set out in the Government guidance due to COVID-19.',
+    points: [
+      { point: 'Flutter QR code scanner application' },
+      {
+        point: 'Recieved *237 duplicated* and 7 favourites in figma community',
+      },
+    ],
+    type: 'laptop',
+    button: [
+      { name: 'View Project', link: '/' },
+      { name: 'View Demo', link: '/' },
+    ],
+  },
+  {
+    id: 5,
+    img: './images/mockLaptop.png',
+    heading: 'TT Club',
+    subheading: 'UX Case study / Visual Design',
+    description:
+      'Maintaining records of staff, customers  and visitors contact tracing purposes, as set out in the Government guidance due to COVID-19.',
+    points: [
+      { point: 'Flutter QR code scanner application' },
+      {
+        point: 'Recieved *237 duplicated* and 7 favourites in figma community',
+      },
+    ],
+    type: 'laptop',
+    button: [
+      { name: 'View Project', link: '/' },
+      { name: 'View Demo', link: '/' },
+    ],
+  },
+  {
+    id: 6,
+    img: './images/mockLaptop.png',
+    heading: 'TT Club',
+    subheading: 'UX Case study / Visual Design',
+    description:
+      'Maintaining records of staff, customers  and visitors contact tracing purposes, as set out in the Government guidance due to COVID-19.',
+    points: [
+      { point: 'Flutter QR code scanner application' },
+      {
+        point: 'Recieved *237 duplicated* and 7 favourites in figma community',
+      },
+    ],
+    type: 'laptop',
+    button: [
+      { name: 'View Project', link: '/' },
+      { name: 'View Demo', link: '/' },
+    ],
+  },
 ];
 
 //>>>>>>>>>>>>Data for playground section of home page<<<<<<<<<<<<
