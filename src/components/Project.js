@@ -51,7 +51,7 @@ function Project({
         <p className='para pt-[16px]'>{description}</p>
         <div className='para pt-[28px] xl:pt-[32px]'>
           <ul className='list-disc pl-[24px]'>
-            {points.map((point, index) => {
+            {points?.map((point, index) => {
               return <li key={index}>{point.point}</li>;
             })}
           </ul>
