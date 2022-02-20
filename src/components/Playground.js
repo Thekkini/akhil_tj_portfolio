@@ -26,13 +26,13 @@ function Playground() {
       <div>
         <div
           data-aos='fade-up'
-          className='hidden  grid-cols-3 gap-[24px] xl:grid'
+          className='hidden grid-cols-3 gap-[24px] xl:grid'
         >
           {playground.map((item, index) => {
             return (
               <img
                 key={index}
-                className=' aspect-square  rounded object-cover'
+                className='aspect-square  rounded object-cover'
                 src={item.img}
                 alt='playground'
               />

@@ -47,6 +47,7 @@ function Footer() {
                 rel='noreferrer'
                 className='rounded-full'
                 href={item.link}
+                key={index}
               >
                 <div className='flex h-[40px] w-[40px] items-center justify-center rounded-full bg-black'>
                   {item.icon}

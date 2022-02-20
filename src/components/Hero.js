@@ -17,13 +17,13 @@ function Hero() {
           <span className='outline_text xl:text-center'>Enthusiastic</span>{' '}
           <span className='xl:text-center'>UX Designer</span>
         </h1>
-        <p className='main-para xl:text-center max-w-[780px] mx-auto'>
+        <p className='main-para max-w-[780px] xl:mx-auto xl:text-center'>
           <span className='text-myRed'>My Philosophy</span>: "is to add value to
           almost everything, including products, individuals, and myself"
         </p>
       </div>
       <div data-aos='fade-left' className='flex justify-between pt-[201.5px]'>
-        <div className='hidden gap-[26.5px]  md:flex '>
+        <div className='hidden gap-[26.5px]  xl:flex '>
           {socialMedia.map((item, index) => {
             return (
               <a

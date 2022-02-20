@@ -16,13 +16,13 @@ function AboutHero() {
           alt='myPhoto'
         />
 
-        <div className='bg-myLight right-[20px] top-[250px] z-50 mb-[108px] px-[16px] pt-[24px] xl:relative  xl:mb-[400px] xl:max-w-[750px]   '>
+        <div className='right-[20px] top-[250px] z-50 mb-[108px] bg-myLight px-[16px] pt-[24px] xl:relative  xl:mb-[400px] xl:max-w-[750px]   '>
           <h1 className='sub-heading '>{aboutData.aboutMyself.heading}</h1>
           <p className='main-para pt-[4px]'>
             <span className='text-myRed'>My Philosophy</span>: "
             {aboutData.aboutMyself.philosophy}"
           </p>
-          <p className='para pt-[40px] lg:pt-[48px]'>
+          <p className='para pt-[40px] xl:pt-[48px]'>
             {aboutData.aboutMyself.bio}
           </p>
         </div>

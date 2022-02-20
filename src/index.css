@@ -5,15 +5,15 @@
 @import '~react-image-gallery/styles/css/image-gallery.css';
 
 .main-heading {
-  @apply text-myBlue text-[44px] font-extrabold leading-[60px] lg:text-[56px] lg:leading-[78px];
+  @apply text-[44px] font-extrabold leading-[60px] text-myBlue xl:text-[56px] xl:leading-[78px];
 }
 
 .sub-heading {
-  @apply text-myBlue text-[32px] font-bold leading-[34.32px] lg:leading-[48px];
+  @apply text-[32px] font-bold leading-[34.32px] text-myBlue xl:leading-[48px];
 }
 
 .main-para {
-  @apply text-[22px] font-medium leading-[34.32px] lg:text-[24px] lg:leading-[35.52px];
+  @apply text-[22px] font-medium leading-[34.32px] xl:text-[24px] xl:leading-[35.52px];
 }
 
 .para {
@@ -25,12 +25,9 @@
 }
 
 .project-subheading {
-  @apply text-myRed lg:text-myRedLight text-sm font-semibold uppercase;
+  @apply text-sm font-semibold uppercase text-myRed xl:text-myRedLight;
 }
 
-/* .button-parent-hover {
-  @apply hover:border-0 hover:bg-myRed 
-} */
 
 @layer base {
   * {

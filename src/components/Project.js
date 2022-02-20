@@ -17,7 +17,7 @@ function Project({
   }, []);
 
   return (
-    <div className=''>
+    <div>
       <div
         data-aos='fade-up'
         className={`grid-cols-2 pb-[112px] xl:grid  ${

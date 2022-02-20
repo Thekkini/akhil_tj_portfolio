@@ -11,68 +11,50 @@ import {
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 function MyPictures() {
-  const [imgOne, setImgOne] = useState(0);
-  const [imgTwo, setImgTwo] = useState(1);
-  const [imgThree, setImgThree] = useState(2);
-  const [imgFour, setImgFour] = useState(3);
+  
   const [num, setNum] = useState(0);
   return (
     <div className='gap-[20px] px-[16px] pb-[108px] xl:grid xl:grid-cols-2 xl:px-[160px]'>
-      <h1 className='sub-heading pb-[108px]  lg:pb-0 '>
+      <h1 className='sub-heading pb-[108px]  xl:pb-0 '>
         {aboutData.myPictureHeading}
       </h1>
       {/* Desktop View */}
       <div className='hidden space-y-3 xl:grid'>
         <div>
           <img
-            src={aboutData.myPictures[imgOne].img}
+            src={aboutData.myPictures[0].img}
             className='aspect-square max-h-[547px] w-full'
-            alt=''
+            alt='myPictures'
           />
         </div>
         <div className='grid grid-cols-3 gap-3'>
           <div
             className='bg-slate-100'
-            onClick={() => {
-              setImgThree(2);
-              setImgOne(1);
-              setImgTwo(0);
-              setImgFour(3);
-            }}
+            
           >
             <img
               className='aspect-square  w-full object-cover'
-              src={aboutData.myPictures[imgTwo].img}
-              alt=''
+              src={aboutData.myPictures[1].img}
+              alt='myPictures'
             />
           </div>
           <div
             className='bg-slate-100'
-            onClick={() => {
-              setImgThree(0);
-              setImgOne(1);
-              setImgTwo(2);
-              setImgFour(1);
-            }}
+           
           >
             <img
               className='aspect-square  w-full object-cover'
-              src={aboutData.myPictures[imgThree].img}
-              alt=''
+              src={aboutData.myPictures[2].img}
+              alt='myPictures'
             />
           </div>
           <div
-            onClick={() => {
-              setImgThree(3);
-              setImgOne(1);
-              setImgTwo(2);
-              setImgFour(0);
-            }}
+           
           >
             <img
               className='aspect-square  w-full object-cover'
-              src={aboutData.myPictures[imgFour].img}
-              alt=''
+              src={aboutData.myPictures[3].img}
+              alt='myPictures'
             />
           </div>
         </div>

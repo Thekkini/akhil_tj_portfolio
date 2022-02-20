@@ -8,12 +8,12 @@ function Skills() {
     Aos.init({ duration: 1500, once: true });
   }, []);
   return (
-    <div className='px-[16px]  pb-[108px] lg:px-[160px] lg:pb-[180px] lg:pt-[180px]'>
-      <div className='grid-cols-2 gap-[20px] lg:grid'>
-        <h1 className='sub-heading pb-[108px] lg:pb-0 '>
+    <div className='px-[16px]  pb-[108px] xl:px-[160px] xl:pb-[180px] xl:pt-[180px]'>
+      <div className='grid-cols-2 gap-[20px] xl:grid'>
+        <h1 className='sub-heading pb-[108px] xl:pb-0 '>
           {aboutData.skillHeading.heading}
         </h1>
-        <div className='space-y-[32px] lg:space-y-[48px]'>
+        <div className='space-y-[32px] xl:space-y-[48px]'>
           <div>
             <h1 className='button pb-[24px]'>Skills</h1>
             <div className='flex flex-wrap gap-[8px]'>
@@ -22,7 +22,7 @@ function Skills() {
                   <div className='flex '>
                     <div
                       key={index}
-                      className='bg-myRedVeryLight rounded-[4px] px-[9px] py-[5px]'
+                      className='rounded-[4px] bg-myRedVeryLight px-[9px] py-[5px]'
                     >
                       <p className='button text-myRed'>{skill}</p>
                     </div>
@@ -39,7 +39,7 @@ function Skills() {
                   <div className='flex '>
                     <div
                       key={index}
-                      className='bg-myRedVeryLight rounded-[4px] px-[9px] py-[5px]'
+                      className='rounded-[4px] bg-myRedVeryLight px-[9px] py-[5px]'
                     >
                       <p className='button text-myRed'>{tool}</p>
                     </div>
@@ -56,7 +56,7 @@ function Skills() {
                   <div className='flex '>
                     <div
                       key={index}
-                      className='bg-myRedVeryLight rounded-[4px] px-[9px] py-[5px]'
+                      className='rounded-[4px] bg-myRedVeryLight px-[9px] py-[5px]'
                     >
                       <p className='button text-myRed'>{tech}</p>
                     </div>

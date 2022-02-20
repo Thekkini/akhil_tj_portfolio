@@ -24,7 +24,7 @@ function Testimonials() {
         Testimonials
       </h1>
       {/* Desktop view */}
-      <div className='hidden grid-cols-3 gap-[40px] lg:grid'>
+      <div className='hidden grid-cols-3 gap-[40px] xl:grid'>
         {testimonials.map((item, index) => {
           return (
             <div
@@ -75,7 +75,7 @@ function Testimonials() {
       </div>
 
       {/* Mobile view */}
-      <div className='lg:hidden'>
+      <div className='xl:hidden'>
         <div className='mb-[24px]'>
           <Page
             currentPage={num + 1}

@@ -7,7 +7,7 @@ import Testimonials from '../components/Testimonials';
 function Home() {
   console.log(window.location.href);
   return (
-    <div className='px-[16px] md:px-[160px]'>
+    <div className='px-[16px] xl:px-[160px]'>
       <Hero />
 
       <Projects />
