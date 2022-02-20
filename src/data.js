@@ -113,7 +113,7 @@ export const socialMedia = [
 export const projectCards = [
   {
     id: 1,
-    img: 'https://uitemplate.net/wp-content/uploads/2021/08/Sleep-App-UI-Kit-Free.png',
+    img: './images/mockMobile.png',
 
     heading: 'Ctracker',
     subheading: 'UX Case study / Visual Design',
@@ -131,7 +131,7 @@ export const projectCards = [
   },
   {
     id: 2,
-    img: 'https://uitemplate.net/wp-content/uploads/2021/08/Sleep-App-UI-Kit-Free.png',
+    img: './images/mockMobile.png',
     heading: 'Livangle',
     subheading: 'UX Case study / Visual Design',
     description:
@@ -147,7 +147,7 @@ export const projectCards = [
   },
   {
     id: 3,
-    img: 'https://uitemplate.net/wp-content/uploads/2021/08/Sleep-App-UI-Kit-Free.png',
+    img: './images/mockLaptop.png',
     heading: 'TT Club',
     subheading: 'UX Case study / Visual Design',
     description:
@@ -158,7 +158,7 @@ export const projectCards = [
         point: 'Recieved *237 duplicated* and 7 favourites in figma community',
       },
     ],
-    type: 'phone',
+    type: 'laptop',
     button: [
       { name: 'View Project', link: '/' },
       { name: 'View Demo', link: '/' },

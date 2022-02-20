@@ -8,7 +8,7 @@ function Hero() {
     Aos.init({ duration: 1500, once: true });
   }, []);
   return (
-    <div className='pt-[140px] xl:pt-[265px]'>
+    <div className='pt-[140px] xl:min-h-screen xl:pt-[265px]'>
       <div data-aos='fade-right'>
         <p className='main-para pb-[4px] xl:text-center'>
           Hello, I'm <span className='text-myRed'> Akhil TJ.</span>
