@@ -52,7 +52,7 @@ export default function Example() {
                     </div>
                   </div>
 
-                  <div className=' flex xl:hidden'>
+                  <div className='flex xl:hidden'>
                     {/* Mobile menu button */}
                     <Disclosure.Button
                       onClick={() => {
@@ -74,7 +74,7 @@ export default function Example() {
                 </div>
               </div>
 
-              <Disclosure.Panel className='xl:hidden'>
+              <Disclosure.Panel className='xl:hidden absolute'>
                 <div className='space-y-1 px-2 pt-2 pb-3 sm:px-3'>
                   {navigation.map((item) => (
                     <Disclosure.Button
