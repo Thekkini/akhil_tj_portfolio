@@ -33,8 +33,13 @@ function Footer() {
             );
           })}
         </div>
-        <div>
-          <p>Made with ❤️ Akhil TJ</p>
+        <div className='space-y-[8px]'>
+          <p>
+            Designed by <span className='font-semibold'>Akhil TJ</span>
+          </p>
+          <p>
+            Developed by <span className='font-semibold'>Akshay Benny</span>
+          </p>
         </div>
       </div>
       {/*Mobile View */}
@@ -57,7 +62,9 @@ function Footer() {
           })}
         </div>
         <div>
-          <p className='text-center'>Made with ❤️ Akhil TJ</p>
+          <p className='text-center'>
+            Designed by <span className='font-semibold'>Akhil TJ</span>
+          </p>
         </div>
       </div>
     </div>
