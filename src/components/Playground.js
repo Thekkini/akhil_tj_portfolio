@@ -43,14 +43,6 @@ function Playground() {
 
       {/* Mobile view */}
       <div data-aos='fade-up' className='relative xl:hidden'>
-        <div className='absolute top-[8px] left-[8px] z-50'>
-          <Page
-            currentPage={num + 1}
-            maxPage={playground.length}
-            bgCol={'bg-myLight'}
-            textCol={'text-black'}
-          />
-        </div>
         <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={125}
@@ -59,43 +51,38 @@ function Playground() {
           touchEnabled={false}
           isIntrinsicHeight={true}
         >
-          <Slider>
-            {playground.map((item, index) => {
-              return (
-                <Slide index={index}>
-                  <img
-                    className='h-[343px] w-full object-cover'
-                    src={item.img}
-                    alt='playground'
-                  />
-                </Slide>
-              );
-            })}
-          </Slider>
-
-          <div className='mt-[32px] grid grid-cols-2 gap-[16px]'>
+          <div className='flex items-center gap-7 pb-6'>
             <ButtonBack onClick={() => setNum(num - 1)}>
               <div className='group'>
                 <button
                   className={`button ${
-                    num === 0
-                      ? 'border-myRedLight'
-                      : 'border-myRed group-hover:bg-myRed'
-                  } flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]`}
+                    num === 0 ? 'border-myRedLight' : 'border-myRed '
+                  } flex  cursor-pointer  items-center justify-center rounded-full border-2 py-[6px] px-[6px]`}
                 >
                   <p
                     className={`  ${
-                      num === 0
-                        ? 'text-myRedLight'
-                        : 'text-myRed group-hover:text-myLight'
+                      num === 0 ? 'text-myRedLight' : 'text-myRed'
                     }`}
                   >
-                    Previous
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      viewBox='0 0 24 24'
+                      width='24'
+                      height='24'
+                    >
+                      <path fill='none' d='M0 0h24v24H0z' />
+                      <path d='M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z' />
+                    </svg>
                   </p>
                 </button>
               </div>
             </ButtonBack>
-
+            <Page
+              currentPage={num + 1}
+              maxPage={playground.length}
+              bgCol={'bg-black'}
+              textCol={'text-myLight'}
+            />
             <ButtonNext onClick={() => setNum(num + 1)}>
               <div className='group'>
                 <button
@@ -103,7 +90,7 @@ function Playground() {
                     num === 5
                       ? 'border-myRedLight'
                       : 'border-myRed group-hover:bg-myRed'
-                  } flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]`}
+                  } flex cursor-pointer items-center justify-center rounded-full border-2  py-[6px] px-[6px]`}
                 >
                   <p
                     className={`  ${
@@ -112,12 +99,33 @@ function Playground() {
                         : 'text-myRed group-hover:text-myLight'
                     }`}
                   >
-                    Next
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      viewBox='0 0 24 24'
+                      width='24'
+                      height='24'
+                    >
+                      <path fill='none' d='M0 0h24v24H0z' />
+                      <path d='M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z' />
+                    </svg>
                   </p>
                 </button>
               </div>
             </ButtonNext>
           </div>
+          <Slider>
+            {playground.map((item, index) => {
+              return (
+                <Slide index={index}>
+                  <img
+                    className='aspect-square min-h-[343px] w-full object-cover'
+                    src={item.img}
+                    alt='playground'
+                  />
+                </Slide>
+              );
+            })}
+          </Slider>
         </CarouselProvider>
       </div>
     </div>

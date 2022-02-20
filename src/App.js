@@ -9,10 +9,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='bg-myLight min-h-screen select-none '>
+    <div className='min-h-screen bg-myLight'>
       <BrowserRouter>
         <ScrollToTop>
-          <Header  />
+          <Header />
           <Switch>
             <Route exact path='/' component={Home}>
               <Home />
@@ -26,8 +26,8 @@ function App() {
               bottom: '20px',
               right: '30px',
               backgroundColor: '#F6490D',
-              color: '#FAF9F0',
-              filter: 'drop-shadow(0 1px 1px rgb(0 0 0 / 0.05))',
+              color:'#FAF9F0',
+              filter:'drop-shadow(0 1px 1px rgb(0 0 0 / 0.05))',
             }}
           />
           <div>
