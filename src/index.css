@@ -21,17 +21,14 @@
 }
 
 .button {
-  @apply cursor-pointer text-[14px] font-semibold uppercase;
+  @apply cursor-pointer px-9 text-[14px] font-semibold uppercase;
 }
 
 .project-subheading {
   @apply text-sm font-semibold uppercase text-myRed xl:text-myRedLight;
 }
 
-
-
 @layer base {
- 
   * {
     font-family: 'Montserrat', sans-serif;
   }

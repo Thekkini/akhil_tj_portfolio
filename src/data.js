@@ -202,6 +202,17 @@ export const testimonials = [
   },
 ];
 
+//>>>>>>>>>>>>Data for components just before the footer in the home page<<<<<<<<<<<<
+export const subFooter = [
+  {
+    content:
+      'I’m looking for a full-time UX designer position world wide. Give me a shout!',
+    email: 'akhiltj.dev@gmail.com',
+    button: 'Resume',
+    link: '/',
+  },
+];
+
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 //>>>>>>>>>>>>>>>>>>>DATA USED IN ABOUT-PAGE<<<<<<<<<<<<<<<<<<<<<<<
