@@ -19,15 +19,15 @@ function Playground() {
     Aos.init({ duration: 1500, once: true });
   }, []);
   return (
-    <div className='px-[16px] pt-[145px] pb-[32px] xl:px-[160px] xl:pt-[180px]'>
+    <div
+      data-aos='fade-up'
+      className='px-[16px] pt-[145px] pb-[32px] xl:px-[160px] xl:pt-[180px]'
+    >
       <h1 className='sub-heading pb-[32px]'>Playground</h1>
 
       {/* Desktop view */}
       <div>
-        <div
-          data-aos='fade-up'
-          className='hidden grid-cols-3 gap-[24px] xl:grid'
-        >
+        <div className='hidden grid-cols-3 gap-[24px] xl:grid'>
           {playground.map((item, index) => {
             return (
               <img

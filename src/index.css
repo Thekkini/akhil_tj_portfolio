@@ -24,7 +24,7 @@
   @apply cursor-pointer px-9 text-[14px] font-semibold uppercase;
 }
 .arrowButton {
-  @apply cursor-pointer flex  cursor-pointer  items-center justify-center rounded-full border-[1.5px] py-[6px] px-[6px];
+  @apply flex cursor-pointer  items-center justify-center rounded-full border-[1.5px] py-[6px] px-[6px];
 }
 
 .project-subheading {
@@ -32,6 +32,10 @@
 }
 
 @layer base {
+  html,
+  body {
+    overscroll-behavior: none;
+  }
   * {
     font-family: 'Montserrat', sans-serif;
   }

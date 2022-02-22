@@ -19,7 +19,7 @@ function Testimonials() {
   }, []);
 
   return (
-    <div data-aos='fade-right' className='px-[16px] xl:px-[160px]'>
+    <div  data-aos='fade-up' className='px-[16px] xl:px-[160px]'>
       <h1 className='sub-heading pb-[32px] pt-[144px] xl:pt-[180px]'>
         Testimonials
       </h1>

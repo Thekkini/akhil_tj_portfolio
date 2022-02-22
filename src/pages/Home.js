@@ -5,18 +5,27 @@ import Projects from '../components/Projects';
 import Subfooter from '../components/Subfooter';
 import Testimonials from '../components/Testimonials';
 import { ScrollerMotion } from 'scroller-motion';
-
+import MediaQuery from 'react-responsive';
 function Home() {
   console.log(window.location.href);
   return (
     <div>
-      <ScrollerMotion>
+      <MediaQuery minWidth={1280}>
+        <ScrollerMotion>
+          <Hero />
+          <Projects />
+          <Playground />
+          <Testimonials />
+          <Subfooter />
+        </ScrollerMotion>
+      </MediaQuery>
+      <MediaQuery maxWidth={1280}>
         <Hero />
         <Projects />
         <Playground />
         <Testimonials />
         <Subfooter />
-      </ScrollerMotion>
+      </MediaQuery>
     </div>
   );
 }
