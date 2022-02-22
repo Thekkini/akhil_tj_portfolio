@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: "'Montserrat', sans-serif",
+        montserratblack: "'Montserrat-Black', sans-serif",
       },
       colors: {
         myLight: '#FAF9F0',
