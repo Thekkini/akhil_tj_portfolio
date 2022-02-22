@@ -19,7 +19,7 @@ function Testimonials() {
   }, []);
 
   return (
-    <div data-aos='fade-right' className='px-[16px] pb-[140px] xl:px-[160px]'>
+    <div data-aos='fade-right' className='px-[16px] xl:px-[160px]'>
       <h1 className='sub-heading pb-[32px] pt-[144px] xl:pt-[180px]'>
         Testimonials
       </h1>
@@ -207,8 +207,6 @@ function Testimonials() {
                 })}
               </Slider>
             </div>
-
-            <div className='mt-[32px] grid grid-cols-2 gap-[16px]'></div>
           </div>
         </CarouselProvider>
       </div>

@@ -4,6 +4,7 @@ import Skills from '../components/Skills';
 import MyPictures from '../components/MyPictures';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { ScrollerMotion } from 'scroller-motion';
 
 function About() {
   console.log(window.location.href);
@@ -12,16 +13,18 @@ function About() {
   }, []);
   return (
     <div>
-      <div data-aos='fade-up'>
-        <AboutHero />
-      </div>
-      <div data-aos='fade-up'>
-        <Skills />
-      </div>
+      <ScrollerMotion>
+        <div data-aos='fade-up'>
+          <AboutHero />
+        </div>
+        <div data-aos='fade-up'>
+          <Skills />
+        </div>
 
-      <div data-aos='fade-up'>
-        <MyPictures />
-      </div>
+        <div data-aos='fade-up'>
+          <MyPictures />
+        </div>
+      </ScrollerMotion>
     </div>
   );
 }

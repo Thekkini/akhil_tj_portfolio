@@ -4,7 +4,7 @@ import { subFooter } from '../data';
 function Subfooter() {
   console.log(subFooter);
   return (
-    <div className='inline-block px-4 xl:hidden'>
+    <div className='inline-block pt-32 px-4 xl:hidden'>
       <p className='main-para'>{subFooter[0].content}</p>
       <div className='flex items-center gap-2'>
         <p className='main-para text-myRed'>{subFooter[0].email}</p>

@@ -10,7 +10,9 @@
     "@testing-library/user-event": "^13.5.0",
     "@trendyol-js/react-carousel": "^2.0.1",
     "aos": "^2.3.4",
+    "framer-motion": "^6.2.7",
     "hoist-non-react-statics": "^3.3.2",
+    "node-sass": "^7.0.1",
     "pure-react-carousel": "^1.27.8",
     "react": "^17.0.2",
     "react-custom-back-to-top-button": "^1.0.2",
@@ -21,6 +23,8 @@
     "react-router-dom": "5.2",
     "react-scripts": "5.0.0",
     "react-slick": "^0.28.1",
+    "resize-observer-polyfill": "^1.5.1",
+    "scroller-motion": "^1.0.0",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },

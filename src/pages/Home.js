@@ -4,16 +4,19 @@ import Playground from '../components/Playground';
 import Projects from '../components/Projects';
 import Subfooter from '../components/Subfooter';
 import Testimonials from '../components/Testimonials';
+import { ScrollerMotion } from 'scroller-motion';
 
 function Home() {
   console.log(window.location.href);
   return (
     <div>
-      <Hero />
-      <Projects />
-      <Playground />
-      <Testimonials />
-      <Subfooter />
+      <ScrollerMotion>
+        <Hero />
+        <Projects />
+        <Playground />
+        <Testimonials />
+        <Subfooter />
+      </ScrollerMotion>
     </div>
   );
 }

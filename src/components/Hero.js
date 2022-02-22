@@ -56,7 +56,7 @@ function Hero() {
           })}
         </div>
         <div className='hidden items-center justify-center gap-2 xl:flex'>
-          <p className='button'>Scroll </p>
+          <p className='text-[14px] font-semibold uppercase'>Scroll </p>
           <span>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -71,7 +71,7 @@ function Hero() {
               />
             </svg>
           </span>
-          <p className='button'> Down</p>
+          <p className='text-[14px] font-semibold uppercase'> Down</p>
         </div>
       </div>
     </div>

@@ -7,11 +7,13 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+
 function App() {
   return (
     <div className='min-h-screen bg-myLight'>
       <BrowserRouter>
         <ScrollToTop>
+        
           <Header />
           <Switch>
             <Route exact path='/' component={Home}>

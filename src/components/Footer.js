@@ -3,16 +3,16 @@ import { socialMedia } from '../data';
 import { footer } from '../data';
 function Footer() {
   return (
-    <div className='px-[16px] pb-[36px] xl:px-[160px]'>
+    <div className='px-[16px] pb-[36px] pt-32 xl:px-[160px]  xl:pt-44'>
       {/* Desktop view */}
-      <div className='hidden justify-between  xl:flex '>
-        <div className='flex gap-[26.5px] '>
+      <div className='hidden items-end  justify-between xl:flex '>
+        <div className='flex gap-12'>
           {socialMedia.map((item, index) => {
             return (
               <a
                 key={index}
                 href={item.link}
-                className='button flex items-center justify-center space-x-[10.5px]'
+                className='flex items-center justify-center cursor-pointer space-x-[10.5px] text-[14px] font-semibold uppercase'
               >
                 <p>{item.name}</p>
                 <div>
