@@ -27,7 +27,7 @@ function Hero() {
           almost everything, including products, individuals, and myself.
         </p>
       </div>
-      <div className='flex justify-between pb-36 '>
+      <div className='flex justify-between pb-24 '>
         <div className='hidden gap-[26.5px]  xl:flex '>
           {socialMedia.map((item, index) => {
             return (
