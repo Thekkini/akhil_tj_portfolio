@@ -89,7 +89,7 @@ function Testimonials() {
             <ButtonBack onClick={() => setNum(num - 1)}>
               <div className='group'>
                 <button
-                  className={`button ${
+                  className={`arrowButton ${
                     num === 0 ? 'border-myRedLight' : 'border-myRed  '
                   } flex w-full cursor-pointer  items-center justify-center rounded-full border-2 py-[6px] px-[6px]`}
                 >
@@ -128,7 +128,7 @@ function Testimonials() {
             <ButtonNext onClick={() => setNum(num + 1)}>
               <div>
                 <button
-                  className={`button ${
+                  className={`arrowButton ${
                     num === 2 ? 'border-myRedLight' : 'border-myRed  '
                   } flex w-full cursor-pointer  items-center justify-center rounded-full border-[1.5px] py-[6px] px-[6px]`}
                 >

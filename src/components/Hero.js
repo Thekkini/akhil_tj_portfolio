@@ -19,11 +19,11 @@ function Hero() {
         <h1 className='main-heading pb-[4px] xl:text-center '>
           <span className='outline_text font-montserratblack xl:text-center'>
             Product cum
-          </span>{' '}
-          <span className='heading xl:text-center'>UX Designer</span>
+          </span>
+          <span className='heading xl:text-center'> UX Designer</span>
         </h1>
         <p className='main-para max-w-[780px] xl:mx-auto xl:text-center'>
-          <span className='text-myRed'>My Philosophy</span>is to add value to
+          <span className='text-myRed'>My Philosophy</span> is to add value to
           almost everything, including products, individuals, and myself.
         </p>
       </div>

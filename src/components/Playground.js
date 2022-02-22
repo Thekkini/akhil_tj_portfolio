@@ -19,7 +19,7 @@ function Playground() {
     Aos.init({ duration: 1500, once: true });
   }, []);
   return (
-    <div className='pt-[145px] px-[16px] xl:px-[160px] pb-[32px] xl:pt-[180px]'>
+    <div className='px-[16px] pt-[145px] pb-[32px] xl:px-[160px] xl:pt-[180px]'>
       <h1 className='sub-heading pb-[32px]'>Playground</h1>
 
       {/* Desktop view */}
@@ -54,10 +54,10 @@ function Playground() {
           <div className='flex items-center gap-7 pb-6'>
             <ButtonBack onClick={() => setNum(num - 1)}>
               <div className='group'>
-                <button
-                  className={`button ${
+                <div
+                  className={`arrowButton ${
                     num === 0 ? 'border-myRedLight' : 'border-myRed '
-                  } flex  cursor-pointer  items-center justify-center rounded-full border-[1.5px] py-[6px] px-[6px]`}
+                  } `}
                 >
                   <p
                     className={`  ${
@@ -81,7 +81,7 @@ function Playground() {
                       />
                     </svg>
                   </p>
-                </button>
+                </div>
               </div>
             </ButtonBack>
             <Page
@@ -92,8 +92,8 @@ function Playground() {
             />
             <ButtonNext onClick={() => setNum(num + 1)}>
               <div className='group'>
-                <button
-                  className={`button ${
+                <div
+                  className={`arrowButton ${
                     num === 5 ? 'border-myRedLight' : 'border-myRed '
                   } flex cursor-pointer items-center justify-center rounded-full border-[1.5px]  py-[6px] px-[6px]`}
                 >
@@ -119,7 +119,7 @@ function Playground() {
                       />
                     </svg>
                   </p>
-                </button>
+                </div>
               </div>
             </ButtonNext>
           </div>
