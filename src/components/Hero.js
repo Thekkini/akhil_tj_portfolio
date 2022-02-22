@@ -8,8 +8,11 @@ function Hero() {
     Aos.init({ duration: 1500, once: true });
   }, []);
   return (
-    <div className='px-[16px] pt-[140px] xl:min-h-screen xl:px-[160px] xl:pt-[265px]'>
-      <div data-aos='fade-right'>
+    <div
+      data-aos='fade-right'
+      className='px-[16px] pt-[140px] xl:flex xl:min-h-screen xl:flex-col xl:justify-between xl:px-[160px] xl:pt-[265px]'
+    >
+      <div>
         <p className='main-para pb-[4px] xl:text-center'>
           Hello, I'm <span className='text-myRed'> Akhil TJ.</span>
         </p>
@@ -24,7 +27,7 @@ function Hero() {
           almost everything, including products, individuals, and myself.
         </p>
       </div>
-      <div data-aos='fade-left' className='flex justify-between pt-[201.5px]'>
+      <div className='flex justify-between pb-36 '>
         <div className='hidden gap-[26.5px]  xl:flex '>
           {socialMedia.map((item, index) => {
             return (

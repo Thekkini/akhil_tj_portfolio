@@ -32,7 +32,7 @@ function Testimonials() {
               key={index}
             >
               <div>
-                <p className='text-[18px] font-normal italic leading-[27.36px]'>
+                <p className='text-[18px] font-normal  leading-[27.36px]'>
                   {item.testimonial}
                 </p>
               </div>
@@ -166,7 +166,7 @@ function Testimonials() {
                     <Slide index={index}>
                       <div className='border-myRedLight space-y-[40px] rounded-lg border-2 px-[12px] py-[24px]'>
                         <div>
-                          <p className='text-[18px] font-normal italic leading-[27.36px]'>
+                          <p className='text-[18px] font-normal  leading-[27.36px]'>
                             {item.testimonial}
                           </p>
                         </div>
