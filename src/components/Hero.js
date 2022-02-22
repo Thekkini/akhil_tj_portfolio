@@ -20,8 +20,8 @@ function Hero() {
           <span className='heading xl:text-center'>UX Designer</span>
         </h1>
         <p className='main-para max-w-[780px] xl:mx-auto xl:text-center'>
-          <span className='text-myRed'>My Philosophy</span>: "is to add value to
-          almost everything, including products, individuals, and myself"
+          <span className='text-myRed'>My Philosophy</span>is to add value to
+          almost everything, including products, individuals, and myself.
         </p>
       </div>
       <div data-aos='fade-left' className='flex justify-between pt-[201.5px]'>

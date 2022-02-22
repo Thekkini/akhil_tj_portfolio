@@ -116,9 +116,9 @@ export const projectCards = [
     img: './images/mockMobile.png',
 
     heading: 'Ctracker',
-    subheading: 'UX Case study / Visual Design',
+    subheading: 'UX Case study / Branding',
     description:
-      'Maintaining records of staff, customers  and visitors contact tracing purposes, as set out in the Government guidance due to COVID-19.',
+      'Maintaining records of staff, customers and visitors for contact tracing purposes, as set out in the Government guidance due to COVID-19.',
     points: [],
 
     type: 'phone',
@@ -127,36 +127,22 @@ export const projectCards = [
 
   {
     id: 2,
-    img: './images/mockLaptop.png',
-    heading: 'TT Club',
-    subheading: 'UX Case study / Visual Design',
-    description:
-      'Maintaining records of staff, customers  and visitors contact tracing purposes, as set out in the Government guidance due to COVID-19.',
-    points: [],
-    type: 'laptop',
-    button: [
-      { name: 'View Project', link: '/' },
-      { name: 'View Demo', link: '/' },
-    ],
-  },
-  {
-    id: 3,
     img: './images/mockMobile.png',
     heading: 'Livangle',
-    subheading: 'UX Case study / Visual Design',
+    subheading: 'UX Design Internship',
     description:
-      'Livangle is an online e-commerce platform for your choice of business(Eg: Online Shopping, Healthcare, Food & Beverage etc) based in UAE & India. ',
+      'Livangle is an online e-commerce platform for your choice of business(Eg: Online Shopping, Healthcare, Food & Beverage etc) based in UAE & India.',
     points: [],
     type: 'phone',
     button: [{ name: 'View Project', link: '/' }],
   },
   {
-    id: 4,
+    id: 3,
     img: './images/mockLaptop.png',
     heading: 'TT Club',
     subheading: 'UX Case study / Visual Design',
     description:
-      'Maintaining records of staff, customers  and visitors contact tracing purposes, as set out in the Government guidance due to COVID-19.',
+      'Maintaining records of staff, customers and visitors for contact tracing purposes, as set out in the Government guidance due to COVID-19.',
     points: [],
     type: 'laptop',
     button: [
@@ -193,10 +179,10 @@ export const testimonials = [
   {
     img: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
     link: '/',
-    name: 'Kim Jones',
-    post: 'Design Mentor, FOFK',
+    name: 'Niyas Ashraf',
+    post: 'UI/UX Mentor, TinkerHub',
     testimonial:
-      'Skilled in leadership, seeking to leverage solid design skills with a focus on collaboration, communication and passion.',
+      '“Turpis viverra amet purus laoreet non ultricies lectus morbi. Erat diam amet pharetra id id lobortis magna tellus.” ',
   },
   {
     img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
@@ -204,14 +190,15 @@ export const testimonials = [
     name: 'Tim Cook',
     post: 'Product Manager, Peeps',
     testimonial:
-      'When you are joyful, when you say yes to life and have func and project positivity all around you, you become a sun in the center of every constellation, and people want to be near you.',
+      '“Ut rhoncus sem imperdiet faucibus. Nisl ultricies porttitor ut pellentesque leo nunc. Aenean vestibulum sit at metus. Erat diam amet pharetra id id lobortis magna tellus.”',
   },
   {
     img: 'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
     link: '/',
+    post: 'CEO, Megham Labs',
     name: 'Zameel Pichen',
     testimonial:
-      "Inspiration comes from within yourself. One has to be positive. When you're positive, good things happen.",
+      '“Aliquet malesuada pharetra viverra lectus ullamcorper quis nunc, sed gravida. Sit habitasse semper consectetur.”',
   },
 ];
 
