@@ -15,16 +15,20 @@ function Skills() {
         </h1>
         <div className='space-y-[32px] xl:space-y-[48px]'>
           <div>
-            <h1 className='button pb-[24px]'>Skills</h1>
+            <h1 className='pb-[24px] text-[14px] font-semibold uppercase'>
+              Skills
+            </h1>
             <div className='flex flex-wrap gap-[8px]'>
               {aboutData.mySkills.skills.map((skill, index) => {
                 return (
                   <div className='flex '>
                     <div
                       key={index}
-                      className='rounded-[4px] bg-myRedVeryLight px-[9px] py-[5px]'
+                      className='bg-myRedVeryLight rounded-[4px] px-[9px] py-[5px]'
                     >
-                      <p className='button text-myRed'>{skill}</p>
+                      <p className='text-myRed text-[14px] font-semibold uppercase'>
+                        {skill}
+                      </p>
                     </div>
                   </div>
                 );
@@ -32,16 +36,20 @@ function Skills() {
             </div>
           </div>
           <div>
-            <h1 className='button pb-[24px]'>Tools</h1>
+            <h1 className='pb-[24px] text-[14px] font-semibold uppercase'>
+              Tools
+            </h1>
             <div className='flex flex-wrap gap-[8px]'>
               {aboutData.mySkills.tools.map((tool, index) => {
                 return (
                   <div className='flex '>
                     <div
                       key={index}
-                      className='rounded-[4px] bg-myRedVeryLight px-[9px] py-[5px]'
+                      className='bg-myRedVeryLight rounded-[4px] px-[9px] py-[5px]'
                     >
-                      <p className='button text-myRed'>{tool}</p>
+                      <p className='text-myRed text-[14px] font-semibold uppercase'>
+                        {tool}
+                      </p>
                     </div>
                   </div>
                 );
@@ -49,16 +57,20 @@ function Skills() {
             </div>
           </div>
           <div>
-            <h1 className='button pb-[24px]'>Technology</h1>
+            <h1 className='pb-[24px] text-[14px] font-semibold uppercase'>
+              Technology
+            </h1>
             <div className='flex flex-wrap gap-[8px]'>
               {aboutData.mySkills.technology.map((tech, index) => {
                 return (
                   <div className='flex '>
                     <div
                       key={index}
-                      className='rounded-[4px] bg-myRedVeryLight px-[9px] py-[5px]'
+                      className='bg-myRedVeryLight rounded-[4px] px-[9px] py-[5px]'
                     >
-                      <p className='button text-myRed'>{tech}</p>
+                      <p className='text-myRed text-[14px] font-semibold uppercase'>
+                        {tech}
+                      </p>
                     </div>
                   </div>
                 );

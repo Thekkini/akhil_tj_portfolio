@@ -28,7 +28,7 @@ function Testimonials() {
         {testimonials.map((item, index) => {
           return (
             <div
-              className='border-myRedVeryLight space-y-[40px] rounded-lg border-2 px-[16px] py-[32px]'
+              className='border-myRedLight space-y-[40px] rounded-lg border-2 px-[16px] py-[32px]'
               key={index}
             >
               <div>
@@ -76,7 +76,7 @@ function Testimonials() {
 
       {/* Mobile view */}
       <div className='xl:hidden'>
-        <div className='mb-[24px]'></div>
+        
         <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={100}

@@ -3,7 +3,7 @@ import { socialMedia } from '../data';
 import { footer } from '../data';
 function Footer() {
   return (
-    <div className='px-[16px] pb-[36px] pt-32 xl:px-[160px]  xl:pt-44'>
+    <div className='px-[16px] pb-6 pt-32 xl:px-[160px]  '>
       {/* Desktop view */}
       <div className='hidden items-end  justify-between xl:flex '>
         <div className='flex gap-12'>
@@ -12,7 +12,7 @@ function Footer() {
               <a
                 key={index}
                 href={item.link}
-                className='flex items-center justify-center cursor-pointer space-x-[10.5px] text-[14px] font-semibold uppercase'
+                className='flex cursor-pointer items-center justify-center space-x-[10.5px] text-[14px] font-semibold uppercase'
               >
                 <p>{item.name}</p>
                 <div>
@@ -61,9 +61,12 @@ function Footer() {
             );
           })}
         </div>
-        <div>
+        <div className='space-y-[8px]'>
           <p className='text-center'>
             Designed by <span className='font-semibold'>Akhil TJ</span>
+          </p>
+          <p className='text-center'>
+            Developed by <span className='font-semibold'>Akshay Benny</span>
           </p>
         </div>
       </div>
