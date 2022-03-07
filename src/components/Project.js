@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -12,6 +12,8 @@ function Project({
   points,
   button,
 }) {
+  const [btnLength] = useState(button.length);
+
   useEffect(() => {
     Aos.init({ duration: 1500, once: true });
   }, []);
@@ -58,22 +60,26 @@ function Project({
         {
           <div
             className={
-              button.length === 2
-                ? 'grid grid-cols-2 gap-4 xl:flex xl:items-start xl:justify-start xl:gap-4 '
+              btnLength === 2
+                ? 'grid grid-cols-2 gap-4 xl:flex xl:items-start xl:justify-start xl:gap-4'
                 : 'w-fit'
             }
           >
-            {button.map((button, index) => {
+            {button.map((btn, index) => {
               return (
                 <div className='flex'>
                   <a
                     className='group w-full xl:w-fit'
-                    href={button.link}
+                    href={btn.link}
                     key={index}
                   >
-                    <button className='button mt-[28px] flex w-full  cursor-pointer items-center justify-center gap-2 rounded-[4px] border-[1.5px] border-myRed py-[16px] group-hover:bg-myRed xl:mt-[32px] xl:w-fit xl:px-6 '>
+                    <button
+                      className={`${
+                        btnLength === 1 ? 'px-6' : ''
+                      }  button mt-[28px] flex w-full  cursor-pointer items-center justify-center gap-2 rounded-[4px] border-[1.5px] border-myRed py-[16px] group-hover:bg-myRed xl:mt-[32px] xl:w-fit xl:px-6 `}
+                    >
                       <p className='text-myRed  group-hover:text-myLight'>
-                        {button.name}
+                        {btn.name}
                       </p>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'

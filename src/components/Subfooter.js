@@ -4,7 +4,7 @@ import { subFooter } from '../data';
 function Subfooter() {
   console.log(subFooter);
   return (
-    <div className='inline-block pt-32 px-4 xl:hidden'>
+    <div className='inline-block px-4 pt-32 xl:hidden'>
       <p className='main-para'>{subFooter[0].content}</p>
       <div className='flex items-center gap-2'>
         <p className='main-para text-myRed'>{subFooter[0].email}</p>
@@ -21,9 +21,9 @@ function Subfooter() {
           />
         </svg>
       </div>
-      <div className="flex">
+      <div className='flex'>
         <a className='group  xl:w-fit' href={subFooter[0].link}>
-          <button className='button mt-[28px] flex w-full cursor-pointer items-center justify-center gap-2 rounded-[4px] border-[1.5px] border-myRed py-[16px] group-hover:bg-myRed xl:mt-[32px] xl:w-fit xl:px-6 '>
+          <button className='button mt-[28px] flex w-full cursor-pointer items-center justify-center gap-2 rounded-[4px] border-[1.5px] border-myRed px-6 py-[16px] group-hover:bg-myRed xl:mt-[32px] xl:w-fit xl:px-6 '>
             <p className='text-myRed group-hover:text-myLight'>
               {subFooter[0].button}
             </p>
