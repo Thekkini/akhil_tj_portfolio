@@ -4,8 +4,8 @@ import Skills from '../components/Skills';
 import MyPictures from '../components/MyPictures';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { ScrollerMotion } from 'scroller-motion';
-import MediaQuery from 'react-responsive';
+// import { ScrollerMotion } from 'scroller-motion';
+// import MediaQuery from 'react-responsive';
 
 function About() {
   console.log(window.location.href);
@@ -14,7 +14,7 @@ function About() {
   }, []);
   return (
     <div>
-      <MediaQuery minWidth={1280}>
+      {/* <MediaQuery minWidth={1280}>
         <ScrollerMotion>
           <div data-aos='fade-up'>
             <AboutHero />
@@ -39,7 +39,17 @@ function About() {
         <div data-aos='fade-up'>
           <MyPictures />
         </div>
-      </MediaQuery>
+      </MediaQuery> */}
+      <div data-aos='fade-up'>
+        <AboutHero />
+      </div>
+      <div data-aos='fade-up'>
+        <Skills />
+      </div>
+
+      <div data-aos='fade-up'>
+        <MyPictures />
+      </div>
     </div>
   );
 }

@@ -7,6 +7,8 @@ export const navigation = [
   { id: '2', name: 'About', href: '/about', to: 'about' },
 ];
 
+export const contact = [{ id: '1', name: 'Contact', href: '/', to: 'contact' }];
+
 //Data used in Footer
 export const footer = [
   {
@@ -87,11 +89,6 @@ export const socialMedia = [
     icon: '',
   },
   {
-    name: 'Figma',
-    link: '/',
-    icon: '',
-  },
-  {
     name: 'Linkedin',
     link: '/',
     icon: '',
@@ -122,7 +119,7 @@ export const projectCards = [
     points: [],
 
     type: 'phone',
-    button: [{ name: 'View Project', link: '/' }],
+    button: [{ name: 'Read More', link: '/' }],
   },
 
   {
@@ -134,7 +131,7 @@ export const projectCards = [
       'Livangle is an online e-commerce platform for your choice of business(Eg: Online Shopping, Healthcare, Food & Beverage etc) based in UAE & India.',
     points: [],
     type: 'phone',
-    button: [{ name: 'View Project', link: '/' }],
+    button: [{ name: 'Read More', link: '/' }],
   },
   {
     id: 3,
@@ -146,7 +143,7 @@ export const projectCards = [
     points: [],
     type: 'laptop',
     button: [
-      { name: 'View Project', link: '/' },
+      { name: 'Read More', link: '/' },
       { name: 'View Demo', link: '/' },
     ],
   },

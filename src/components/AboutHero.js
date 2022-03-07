@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { aboutData } from '../data';
 // import Aos from 'aos';
 // import 'aos/dist/aos.css';
@@ -11,12 +11,12 @@ function AboutHero() {
     <div className='px-0 xl:px-[160px] xl:pt-[80px]'>
       <div className='grid-cols-2 xl:grid'>
         <img
-          className=' aspect-square h-[375px]  w-full object-cover xl:h-[503px]'
+          className='aspect-square  w-full object-cover '
           src={aboutData.aboutMyself.img}
           alt='myPhoto'
         />
 
-        <div className='right-[20px] top-[250px] z-50 mb-[108px] bg-myLight px-[16px] pt-[24px] xl:relative  xl:mb-[400px] xl:max-w-[750px]   '>
+        <div className='bg-myLight right-[20px] top-[250px] z-50 mb-[108px] px-[16px] pt-[24px] xl:relative  xl:mb-[400px] xl:max-w-[750px]   '>
           <h1 className='sub-heading '>{aboutData.aboutMyself.heading}</h1>
           <p className='main-para pt-[4px]'>
             <span className='text-myRed'>My Philosophy</span>: "

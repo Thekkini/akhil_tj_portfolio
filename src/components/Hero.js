@@ -10,11 +10,11 @@ function Hero() {
   return (
     <div
       data-aos='fade-right'
-      className='px-[16px] pt-[140px] xl:flex xl:min-h-screen xl:flex-col xl:justify-between xl:px-[160px] xl:pt-[265px]'
+      className='px-4  pt-20 xl:flex xl:min-h-screen xl:flex-col xl:justify-between xl:pt-0 '
     >
-      <div>
+      <div className=' my-auto'>
         <p className='main-para pb-[4px] xl:text-center'>
-          Hello, I'm <span className='text-myRed'> Akhil TJ.</span>
+          Hello, I'm <span className='text-myRed'> Akhil T J.</span>
         </p>
         <h1 className='main-heading pb-[4px] xl:text-center '>
           <span className='outline_text font-montserratblack xl:text-center'>
@@ -24,10 +24,10 @@ function Hero() {
         </h1>
         <p className='main-para max-w-[780px] xl:mx-auto xl:text-center'>
           <span className='text-myRed'>My Philosophy</span> is to add value to
-          almost everything, including products, individuals, and myself.
+          practically anything, from businesses to products to people.
         </p>
       </div>
-      <div className='flex justify-between pb-24 '>
+      <div className='flex justify-between px-40 pb-24 '>
         <div className='hidden gap-[26.5px]  xl:flex '>
           {socialMedia.map((item, index) => {
             return (

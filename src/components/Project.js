@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -19,7 +19,7 @@ function Project({
   return (
     <div
       data-aos='fade-up'
-      className={`grid-cols-2 pb-[112px] xl:grid  ${
+      className={`grid-cols-2  pb-[112px] xl:grid xl:pt-0  ${
         type === 'phone'
           ? 'mx-[16px] xl:mx-[160px] xl:gap-[88px]'
           : 'xl:gap-[20px]'
@@ -55,38 +55,46 @@ function Project({
             })}
           </ul>
         </div>
-        <div className='flex items-start justify-start gap-[16px] '>
-          {button.map((button, index) => {
-            return (
-              <div className='flex'>
-                <a
-                  className='group w-full xl:w-fit'
-                  href={button.link}
-                  key={index}
-                >
-                  <button className='button mt-[28px] flex w-full cursor-pointer items-center justify-center gap-2 rounded-[4px] border-[1.5px] border-myRed py-[16px] group-hover:bg-myRed xl:mt-[32px] xl:w-fit xl:px-6 '>
-                    <p className='text-myRed group-hover:text-myLight'>
-                      {button.name}
-                    </p>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      viewBox='0 0 24 24'
-                      width='24'
-                      height='24'
-                    >
-                      <path fill='none' d='M0 0h24v24H0z' />
-                      <path
-                        d='M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z'
-                        fill='rgba(246,73,13,1)'
-                        className='group-hover:fill-myLight'
-                      />
-                    </svg>
-                  </button>
-                </a>
-              </div>
-            );
-          })}
-        </div>
+        {
+          <div
+            className={
+              button.length === 2
+                ? 'grid grid-cols-2 gap-4 xl:flex xl:items-start xl:justify-start xl:gap-4 '
+                : 'w-fit'
+            }
+          >
+            {button.map((button, index) => {
+              return (
+                <div className='flex'>
+                  <a
+                    className='group w-full xl:w-fit'
+                    href={button.link}
+                    key={index}
+                  >
+                    <button className='button mt-[28px] flex w-full  cursor-pointer items-center justify-center gap-2 rounded-[4px] border-[1.5px] border-myRed py-[16px] group-hover:bg-myRed xl:mt-[32px] xl:w-fit xl:px-6 '>
+                      <p className='text-myRed  group-hover:text-myLight'>
+                        {button.name}
+                      </p>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        viewBox='0 0 24 24'
+                        width='24'
+                        height='24'
+                      >
+                        <path fill='none' d='M0 0h24v24H0z' />
+                        <path
+                          d='M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z'
+                          fill='rgba(246,73,13,1)'
+                          className='group-hover:fill-myLight'
+                        />
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+        }
       </div>
     </div>
   );
