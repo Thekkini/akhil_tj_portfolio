@@ -8,7 +8,7 @@ function AboutHero() {
   //   Aos.init({ duration: 1500, once: true });
   // }, []);
   return (
-    <div className='px-0 xl:px-[160px] xl:pt-[80px]'>
+    <div className='px-0 xl:px-[160px]  xl:pt-[80px]'>
       <div className='grid-cols-2 xl:grid'>
         <img
           className='aspect-square  w-full object-cover '
@@ -16,14 +16,29 @@ function AboutHero() {
           alt='myPhoto'
         />
 
-        <div className='bg-myLight right-[20px] top-[250px] z-50 mb-[108px] px-[16px] pt-[24px] xl:relative  xl:mb-[400px] xl:max-w-[750px]   '>
-          <h1 className='sub-heading '>{aboutData.aboutMyself.heading}</h1>
+        <div className='bg-myLight right-[20px] top-[250px] z-50 mb-[108px] px-[16px] pt-[24px] xl:relative  xl:mb-[400px] xl:max-w-[750px]'>
+          <h1 className='sub-heading '>
+            Hi, I'm <span className='text-myRed'>Akhil T J</span>.
+          </h1>
+          <div>
+            <p className='sub-heading'>
+              My peeps call me <span className='text-myRed'>T J</span> for
+              short.
+            </p>
+          </div>
           <p className='main-para pt-[4px]'>
-            <span className='text-myRed'>My Philosophy</span>: "
-            {aboutData.aboutMyself.philosophy}"
+            {aboutData.aboutMyself.philosophy}
           </p>
           <p className='para pt-[40px] xl:pt-[48px]'>
-            {aboutData.aboutMyself.bio}
+            <div className='space-y-[48px] pb-[24px]'>
+              {aboutData.aboutMyself.bio.map((para, index) => {
+                return (
+                  <div>
+                    <p>{para.para}</p>
+                  </div>
+                );
+              })}
+            </div>
           </p>
         </div>
       </div>

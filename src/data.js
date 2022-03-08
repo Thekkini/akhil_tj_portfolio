@@ -216,9 +216,16 @@ export const subFooter = [
 export const aboutData = {
   aboutMyself: {
     img: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
-    heading: "Hi there, my name is Akhil TJ and I'm a UI/UX Designer",
-    philosophy: 'Add value to things to people and to myself',
-    bio: 'I am ambitious and driven. I thrive on challenge and constantly set goals for myself, so I have something to strive towards. I’m not comfortable with settling, and I’m always looking for an opportunity to do better and achieve greatness.',
+    heading: 'Hi, I’m Akhil T J. My peeps call me T J for short.',
+
+    bio: [
+      {
+        para: 'I’m a self-taught Product cum UX designer with a background in Information Technology Engineering, who is passionate about adding human touch to products, ensuring that customers have the best possible experience.',
+      },
+      {
+        para: 'With a background in both engineering and design, I enjoy bridging the gap between business objectives, technical constraints, and user satisfaction. I am currently looking for opportunities to grow as a UX Designer.',
+      },
+    ],
   },
   skillHeading: {
     heading: "It's incredible when skills and passion comes together",

@@ -19,12 +19,12 @@ function Testimonials() {
   }, []);
 
   return (
-    <div  data-aos='fade-up' className='px-[16px] xl:px-[160px]'>
-      <h1 className='sub-heading pb-[32px] pt-[144px] xl:pt-[180px]'>
+    <div  data-aos='fade-up' className=' xl:px-[160px]'>
+      <h1 className='sub-heading px-4 pb-[32px] pt-[144px] xl:pt-[180px]'>
         Testimonials
       </h1>
       {/* Desktop view */}
-      <div className='hidden grid-cols-3 gap-[40px] xl:grid'>
+      <div className='hidden grid-cols-3 px-4 gap-[40px] xl:grid'>
         {testimonials.map((item, index) => {
           return (
             <div
@@ -85,7 +85,7 @@ function Testimonials() {
           touchEnabled={false}
           isIntrinsicHeight={true}
         >
-          <div className='flex items-center gap-7 pb-6'>
+          <div className='flex items-center px-4 gap-7 pb-6'>
             <ButtonBack onClick={() => setNum(num - 1)}>
               <div className='group'>
                 <button
@@ -164,7 +164,7 @@ function Testimonials() {
                 {testimonials.map((item, index) => {
                   return (
                     <Slide index={index}>
-                      <div className='border-myRedLight space-y-[40px] rounded-lg border-2 px-[12px] py-[24px]'>
+                      <div className='border-myRedLight mx-4 space-y-[40px] rounded-lg border-2 px-[12px] py-[24px]'>
                         <div>
                           <p className='text-[18px] font-normal  leading-[27.36px]'>
                             {item.testimonial}
