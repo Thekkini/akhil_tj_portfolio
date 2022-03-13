@@ -12,6 +12,7 @@ function Projects() {
             type={item.type}
             id={item.id}
             img={item.img}
+            img2={item.img2}
             heading={item.heading}
             subheading={item.subheading}
             description={item.description}

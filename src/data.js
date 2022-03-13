@@ -111,7 +111,7 @@ export const projectCards = [
   {
     id: 1,
     img: './images/mockMobile.png',
-
+    img2: '',
     heading: 'Ctracker',
     subheading: 'UX Case study / Branding',
     description:
@@ -125,6 +125,7 @@ export const projectCards = [
   {
     id: 2,
     img: './images/mockMobile.png',
+    img2: '',
     heading: 'Livangle',
     subheading: 'UX Design Internship',
     description:
@@ -136,6 +137,7 @@ export const projectCards = [
   {
     id: 3,
     img: './images/mockLaptop.png',
+    img2: './images/mockTablet.png',
     heading: 'TT Club',
     subheading: 'UX Case study / Visual Design',
     description:

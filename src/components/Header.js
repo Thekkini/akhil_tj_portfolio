@@ -16,7 +16,7 @@ export default function Example() {
 
   return (
     <>
-      <div className=' sticky top-0 z-50 min-h-full'>
+      <div className='top-0 z-50 min-h-full'>
         <Disclosure as='nav' className='firefox:bg-opacity-90 '>
           {({ open }) => (
             <>
@@ -76,7 +76,7 @@ export default function Example() {
                     </div>
                   </div>
 
-                  <div className='flex bg-myLight xl:hidden'>
+                  <div className='flex z-50 xl:hidden'>
                     {/* Mobile menu button */}
                     <Disclosure.Button
                       onClick={() => {
