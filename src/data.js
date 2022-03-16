@@ -86,17 +86,18 @@ export const socialMedia = [
   {
     name: 'Resume',
     link: '/',
-    icon: '',
+    icon: './images/resume.svg',
+    
   },
   {
     name: 'Linkedin',
     link: '/',
-    icon: '',
+    icon: './images/linkedin.svg',
   },
   {
     name: 'Twitter',
     link: '/',
-    icon: '',
+    icon: './images/twitter.svg',
   },
 ];
 

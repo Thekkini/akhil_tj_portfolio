@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className='px-[16px] pb-6 pt-32 xl:px-[160px]  '>
       {/* Desktop view */}
-      <div className='hidden items-end  justify-between xl:flex '>
+      <div className='hidden items-end justify-between xl:flex '>
         <div className='flex gap-12'>
           {socialMedia.map((item, index) => {
             return (
@@ -45,7 +45,7 @@ function Footer() {
       {/*Mobile View */}
       <div className='space-y-[32px] xl:hidden'>
         <div className='flex justify-center gap-[24px]'>
-          {footer.map((item, index) => {
+          {socialMedia.map((item, index) => {
             return (
               <a
                 target='_blank'
@@ -54,8 +54,8 @@ function Footer() {
                 href={item.link}
                 key={index}
               >
-                <div className='flex h-[40px] w-[40px] items-center justify-center rounded-full bg-black'>
-                  {item.icon}
+                <div className='flex h-[40px] w-[40px] items-center justify-center rounded-full '>
+                  <img src={item.icon} alt={item.icon} />
                 </div>
               </a>
             );
