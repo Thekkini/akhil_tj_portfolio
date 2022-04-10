@@ -16,11 +16,11 @@ export default function Example() {
 
   return (
     <>
-      <div className='top-0 z-50 min-h-full'>
-        <Disclosure as='nav' className='firefox:bg-opacity-90 '>
+      <div className='top-0 z-50 min-h-full '>
+        <Disclosure as='nav' className='firefox:bg-opacity-90 transition'>
           {({ open }) => (
             <>
-              <div className='mx-auto px-[16px] xl:px-[160px]'>
+              <div className='mx-auto px-[16px]  xl:px-[160px] transition'>
                 <div className='flex h-16 items-center justify-between'>
                   <Link to='/'>
                     <div className='flex-shrink-0'>
@@ -39,7 +39,7 @@ export default function Example() {
                   </Link>
 
                   <div className='hidden xl:block'>
-                    <div className=' flex  items-baseline '>
+                    <div className='flex  items-baseline '>
                       <div className='flex gap-16'>
                         <a
                           href='/'
@@ -82,7 +82,7 @@ export default function Example() {
                       onClick={() => {
                         setIsOpen(!isOpen);
                       }}
-                      className=' inline-flex items-center justify-center rounded-lg p-2  text-myBlue '
+                      className='transition inline-flex items-center justify-center rounded-lg p-2  text-myBlue '
                     >
                       <span className='sr-only'>Open main menu</span>
                       {open ? (
@@ -98,8 +98,8 @@ export default function Example() {
                 </div>
               </div>
 
-              <Disclosure.Panel className='absolute xl:hidden'>
-                <div className='space-y-1 bg-myLight  px-2 pt-2 pb-3 sm:px-3'>
+              <Disclosure.Panel className='absolute  z-50 w-full xl:hidden'>
+                <div className='space-y-1 bg-myLight w-full z-50 px-2 pt-2 pb-3 sm:px-3'>
                   {navigation.map((item) => (
                     <Disclosure.Button
                       key={item.name}

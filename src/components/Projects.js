@@ -4,7 +4,7 @@ import { projectCards } from '../data';
 
 function Projects() {
   return (
-    <div className=''>
+    <div className='text-[#000249]'>
       {projectCards.map((item, index) => {
         return (
           <Project

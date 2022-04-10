@@ -99,7 +99,7 @@ function MyPictures() {
                     num === 0
                       ? 'border-myRedLight'
                       : 'border-myRed group-hover:bg-myRed'
-                  } flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]`}
+                  } flex w-full cursor-pointer transition  items-center justify-center rounded-[4px] border-2 py-[16px] px-[24px]`}
                 >
                   <p
                     className={`  ${
@@ -117,11 +117,11 @@ function MyPictures() {
             <ButtonNext onClick={() => setNum(num + 1)}>
               <div className='group'>
                 <button
-                  className={`1button ${
+                  className={`button ${
                     num === 3
                       ? 'border-myRedLight'
                       : 'border-myRed group-hover:bg-myRed'
-                  } flex w-full cursor-pointer  items-center justify-center rounded-[4px] border-[1.5px] py-[16px] px-[24px]`}
+                  } flex w-full cursor-pointer  items-center transition justify-center rounded-[4px] border-2 py-[16px] px-[24px]`}
                 >
                   <p
                     className={`  ${

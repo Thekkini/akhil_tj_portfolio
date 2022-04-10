@@ -8,7 +8,7 @@ function Skills() {
     Aos.init({ duration: 1500, once: true });
   }, []);
   return (
-    <div className='px-[16px]  pb-[108px] xl:px-[160px] xl:pb-[180px] xl:pt-[180px]'>
+    <div className='px-[16px] text-[#000249]  pb-[108px] xl:px-[160px] xl:pb-[180px] xl:pt-[180px]'>
       <div className='grid-cols-2 gap-[20px] xl:grid'>
         <h1 className='sub-heading pb-[108px] xl:pb-0 '>
           {aboutData.skillHeading.heading}

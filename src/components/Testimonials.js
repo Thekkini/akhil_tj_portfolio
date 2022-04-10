@@ -19,7 +19,7 @@ function Testimonials() {
   }, []);
 
   return (
-    <div  data-aos='fade-up' className=' xl:px-[160px]'>
+    <div data-aos='fade-up' className='text-[#000249] xl:px-[160px]'>
       <h1 className='sub-heading px-4 pb-[32px] pt-[144px] xl:pt-[180px]'>
         Testimonials
       </h1>
@@ -32,7 +32,7 @@ function Testimonials() {
               key={index}
             >
               <div>
-                <p className='text-[18px] font-normal  leading-[27.36px]'>
+                <p className='text-[18px] text-[#000249] font-normal  leading-[27.36px]'>
                   {item.testimonial}
                 </p>
               </div>
@@ -76,7 +76,6 @@ function Testimonials() {
 
       {/* Mobile view */}
       <div className='xl:hidden'>
-        
         <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={100}
@@ -85,36 +84,30 @@ function Testimonials() {
           touchEnabled={false}
           isIntrinsicHeight={true}
         >
-          <div className='flex items-center px-4 gap-7 pb-6'>
+          <div className='flex items-center h-full px-4 gap-7 pb-6'>
             <ButtonBack onClick={() => setNum(num - 1)}>
               <div className='group'>
                 <button
                   className={`arrowButton ${
-                    num === 0 ? 'border-myRedLight' : 'border-myRed  '
+                    num === 0
+                      ? 'border-[#000249] opacity-[0.27]'
+                      : 'border-myRed  '
                   } flex w-full cursor-pointer  items-center justify-center rounded-full border-2 py-[6px] px-[6px]`}
                 >
-                  <p
-                    className={`  ${
-                      num === 0 ? 'text-myRedLight' : 'text-myRed  '
-                    }`}
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 24 24'
+                    width='24'
+                    height='24'
                   >
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      viewBox='0 0 24 24'
-                      width='24'
-                      height='24'
-                    >
-                      <path fill='none' d='M0 0h24v24H0z' />
-                      <path
-                        fill={
-                          num === 0
-                            ? 'rgba(246,73,13,0.54)'
-                            : 'rgba(246,73,13,1)'
-                        }
-                        d='M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z'
-                      />
-                    </svg>
-                  </p>
+                    <path fill='none' d='M0 0h24v24H0z' />
+                    <path
+                      fill={
+                        num === 0 ? 'rgba(0, 2, 73, .27)' : 'rgba(246,73,13,1)'
+                      }
+                      d='M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z'
+                    />
+                  </svg>
                 </button>
               </div>
             </ButtonBack>
@@ -129,31 +122,25 @@ function Testimonials() {
               <div>
                 <button
                   className={`arrowButton ${
-                    num === 2 ? 'border-myRedLight' : 'border-myRed  '
-                  } flex w-full cursor-pointer  items-center justify-center rounded-full border-[1.5px] py-[6px] px-[6px]`}
+                    num === 2
+                      ? 'border-[#000249] opacity-[0.27]'
+                      : 'border-myRed  '
+                  } flex w-full cursor-pointer  items-center justify-center rounded-full border-[2px] py-[6px] px-[6px]`}
                 >
-                  <p
-                    className={`  ${
-                      num === 2 ? 'text-myRedLight' : 'text-myRed  '
-                    }`}
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 24 24'
+                    width='24'
+                    height='24'
                   >
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      viewBox='0 0 24 24'
-                      width='24'
-                      height='24'
-                    >
-                      <path fill='none' d='M0 0h24v24H0z' />
-                      <path
-                        fill={
-                          num === 2
-                            ? 'rgba(246,73,13,0.54)'
-                            : 'rgba(246,73,13,1)'
-                        }
-                        d='M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z'
-                      />
-                    </svg>
-                  </p>
+                    <path fill='none' d='M0 0h24v24H0z' />
+                    <path
+                      fill={
+                        num === 2 ? 'rgba(0, 2, 73, .27)' : 'rgba(246,73,13,1)'
+                      }
+                      d='M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z'
+                    />
+                  </svg>
                 </button>
               </div>
             </ButtonNext>
@@ -164,9 +151,9 @@ function Testimonials() {
                 {testimonials.map((item, index) => {
                   return (
                     <Slide index={index}>
-                      <div className='border-myRedLight mx-4 space-y-[40px] rounded-lg border-2 px-[12px] py-[24px]'>
+                      <div className='border-myRedLight flex flex-col justify-between mx-4  h-full space-y-[40px] rounded-lg border-2 px-[12px] py-[24px]'>
                         <div>
-                          <p className='text-[18px] font-normal  leading-[27.36px]'>
+                          <p className='text-[18px] text-[#000249] font-normal  leading-[27.36px]'>
                             {item.testimonial}
                           </p>
                         </div>

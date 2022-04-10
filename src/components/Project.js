@@ -23,7 +23,7 @@ function Project({
   return (
     <div
       data-aos='fade-up'
-      className={`grid-cols-2  pb-[112px] xl:grid xl:pt-0  ${
+      className={`grid-cols-2 text-[#000249]  pb-[112px] xl:grid xl:pt-0  ${
         type === 'phone'
           ? 'mx-[16px] xl:mx-[160px] xl:gap-[88px]'
           : 'mx-[16px] xl:mx-0 xl:gap-[20px]'
@@ -85,7 +85,7 @@ function Project({
       >
         <h1 className='sub-heading pt-[32px] xl:pt-[0px]'>{heading}</h1>
         <h4 className='project-subheading pt-[16px]'>{subheading}</h4>
-        <p className='para pt-[16px]'>{description}</p>
+        <p className='para pt-[16px] text-[#000249]'>{description}</p>
         <div className='para pt-[28px] xl:pt-[32px]'>
           <ul className='list-disc pl-[24px]'>
             {points?.map((point, index) => {
@@ -112,7 +112,7 @@ function Project({
                     <button
                       className={`${
                         btnLength === 1 ? 'px-6' : ''
-                      }  button mt-[28px] flex w-full  cursor-pointer items-center justify-center gap-2 rounded-[4px] border-[1.5px] border-myRed py-[16px] group-hover:bg-myRed xl:mt-[32px] xl:w-fit xl:px-6 `}
+                      }  button mt-[28px] flex w-full  cursor-pointer items-center justify-center gap-2 rounded-[4px] border-[2px] border-myRed py-[16px] group-hover:bg-myRed xl:mt-[32px] transition xl:w-fit xl:px-6 `}
                     >
                       <p className='text-myRed  group-hover:text-myLight'>
                         {btn.name}

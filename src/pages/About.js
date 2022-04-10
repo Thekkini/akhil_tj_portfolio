@@ -13,44 +13,42 @@ function About() {
     Aos.init({ duration: 1500, once: true });
   }, []);
   return (
-    <div>
-      {/* <MediaQuery minWidth={1280}>
-        <ScrollerMotion>
-          <div data-aos='fade-up'>
-            <AboutHero />
-          </div>
-          <div data-aos='fade-up'>
-            <Skills />
-          </div>
+   <>  {/* <MediaQuery minWidth={1280}>
+   <ScrollerMotion>
+     <div data-aos='fade-up'>
+       <AboutHero />
+     </div>
+     <div data-aos='fade-up'>
+       <Skills />
+     </div>
 
-          <div data-aos='fade-up'>
-            <MyPictures />
-          </div>
-        </ScrollerMotion>
-      </MediaQuery>
-      <MediaQuery maxWidth={1280}>
-        <div data-aos='fade-up'>
-          <AboutHero />
-        </div>
-        <div data-aos='fade-up'>
-          <Skills />
-        </div>
+     <div data-aos='fade-up'>
+       <MyPictures />
+     </div>
+   </ScrollerMotion>
+ </MediaQuery>
+ <MediaQuery maxWidth={1280}>
+   <div data-aos='fade-up'>
+     <AboutHero />
+   </div>
+   <div data-aos='fade-up'>
+     <Skills />
+   </div>
 
-        <div data-aos='fade-up'>
-          <MyPictures />
-        </div>
-      </MediaQuery> */}
-      <div data-aos='fade-up'>
-        <AboutHero />
-      </div>
-      <div data-aos='fade-up'>
-        <Skills />
-      </div>
+   <div data-aos='fade-up'>
+     <MyPictures />
+   </div>
+ </MediaQuery> */}
+ <div data-aos='fade-up'>
+   <AboutHero />
+ </div>
+ <div data-aos='fade-up'>
+   <Skills />
+ </div>
 
-      <div data-aos='fade-up'>
-        <MyPictures />
-      </div>
-    </div>
+ <div data-aos='fade-up'>
+   <MyPictures />
+ </div></>
   );
 }
 

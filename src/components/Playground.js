@@ -21,12 +21,16 @@ function Playground() {
   return (
     <div
       data-aos='fade-up'
-      className='px-[16px] pt-[145px] pb-[32px] xl:px-[160px] xl:pt-[180px]'
+      className='px-[16px] text-[#000249] pt-[145px] pb-[32px] xl:px-[160px] xl:pt-[180px]'
     >
       <h1 className='sub-heading pb-[32px]'>Playground</h1>
 
       {/* Desktop view */}
       <div>
+{/* ======================================================================= */}
+
+  
+{/* ======================================================================= */}
         <div className='hidden grid-cols-3 gap-[24px] xl:grid'>
           {playground.map((item, index) => {
             return (

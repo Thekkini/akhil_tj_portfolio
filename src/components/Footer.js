@@ -1,6 +1,5 @@
 import React from 'react';
 import { socialMedia } from '../data';
-import { footer } from '../data';
 function Footer() {
   return (
     <div className='px-[16px] pb-6 pt-32 xl:px-[160px]  '>
@@ -33,9 +32,9 @@ function Footer() {
             );
           })}
         </div>
-        <div className='space-y-[8px]'>
+        <div className='space-y-[8px] text-[#000249] flex flex-col items-end'>
           <p>
-            Designed by <span className='font-semibold'>Akhil TJ</span>
+            Designed by <span className='font-semibold'>Akhil T J</span>
           </p>
           <p>
             Developed by <span className='font-semibold'>Akshay Benny</span>
@@ -61,8 +60,8 @@ function Footer() {
             );
           })}
         </div>
-        <div className='space-y-[8px]'>
-          <p className='text-center'>
+        <div className='space-y-[8px] text-[#000249]'>
+          <p className=' text-center'>
             Designed by <span className='font-semibold'>Akhil TJ</span>
           </p>
           <p className='text-center'>
