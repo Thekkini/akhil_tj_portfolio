@@ -2,7 +2,6 @@ import React from 'react';
 import { subFooter } from '../data';
 
 function Subfooter() {
-  console.log(subFooter);
   return (
     <div className='inline-block text-[#000249] px-4 pt-32 xl:hidden '>
       <p className='main-para'>{subFooter[0].content}</p>

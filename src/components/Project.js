@@ -103,11 +103,11 @@ function Project({
           >
             {button.map((btn, index) => {
               return (
-                <div className='flex'>
+                <div key={index} className='flex'>
                   <a
                     className='group w-full xl:w-fit'
                     href={btn.link}
-                    key={index}
+                    
                   >
                     <button
                       className={`${

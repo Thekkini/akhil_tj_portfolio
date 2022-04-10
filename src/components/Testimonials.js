@@ -123,7 +123,7 @@ function Testimonials() {
                 <button
                   className={`arrowButton ${
                     num === 2
-                      ? 'border-[#000249] opacity-[0.27]'
+                      ? 'border-[#000249]  opacity-[0.27]'
                       : 'border-myRed  '
                   } flex w-full cursor-pointer  items-center justify-center rounded-full border-[2px] py-[6px] px-[6px]`}
                 >
@@ -150,8 +150,8 @@ function Testimonials() {
               <Slider>
                 {testimonials.map((item, index) => {
                   return (
-                    <Slide index={index}>
-                      <div className='border-myRedLight flex flex-col justify-between mx-4  h-full space-y-[40px] rounded-lg border-2 px-[12px] py-[24px]'>
+                    <Slide key={index} index={index}>
+                      <div className='border-myRedLight flex flex-col  mx-4  h-full space-y-[40px] rounded-lg border-2 px-[12px] py-[24px]'>
                         <div>
                           <p className='text-[18px] text-[#000249] font-normal  leading-[27.36px]'>
                             {item.testimonial}

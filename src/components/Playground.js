@@ -15,6 +15,15 @@ import 'aos/dist/aos.css';
 
 function Playground() {
   const [num, setNum] = useState(0);
+
+  // const arrayOfThreeFetcherFunction = () => {
+  //   const size = 3;
+  //   for (let i = 0; i < playground.length; i += size)
+  //     setPlaygroundArrayOfThree(playground.slice(i, i + size));
+  // };
+  // arrayOfThreeFetcherFunction();
+  // console.log(playgroundArrayOfThree);
+
   useEffect(() => {
     Aos.init({ duration: 1500, once: true });
   }, []);
@@ -27,10 +36,9 @@ function Playground() {
 
       {/* Desktop view */}
       <div>
-{/* ======================================================================= */}
+        {/* ======================================================================= */}
 
-  
-{/* ======================================================================= */}
+        {/* ======================================================================= */}
         <div className='hidden grid-cols-3 gap-[24px] xl:grid'>
           {playground.map((item, index) => {
             return (

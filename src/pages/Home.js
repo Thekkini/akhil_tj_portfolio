@@ -7,7 +7,6 @@ import Testimonials from '../components/Testimonials';
 // import { ScrollerMotion } from 'scroller-motion';
 // import MediaQuery from 'react-responsive';
 function Home() {
-  console.log(window.location.href);
   return (
     <div>
       {/* <MediaQuery minWidth={1280}>

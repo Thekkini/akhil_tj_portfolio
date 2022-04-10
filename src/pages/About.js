@@ -8,12 +8,13 @@ import 'aos/dist/aos.css';
 // import MediaQuery from 'react-responsive';
 
 function About() {
-  console.log(window.location.href);
   useEffect(() => {
     Aos.init({ duration: 1500, once: true });
   }, []);
   return (
-   <>  {/* <MediaQuery minWidth={1280}>
+    <>
+      {' '}
+      {/* <MediaQuery minWidth={1280}>
    <ScrollerMotion>
      <div data-aos='fade-up'>
        <AboutHero />
@@ -39,16 +40,16 @@ function About() {
      <MyPictures />
    </div>
  </MediaQuery> */}
- <div data-aos='fade-up'>
-   <AboutHero />
- </div>
- <div data-aos='fade-up'>
-   <Skills />
- </div>
-
- <div data-aos='fade-up'>
-   <MyPictures />
- </div></>
+      <div data-aos='fade-up'>
+        <AboutHero />
+      </div>
+      <div data-aos='fade-up'>
+        <Skills />
+      </div>
+      <div data-aos='fade-up'>
+        <MyPictures />
+      </div>
+    </>
   );
 }
 
