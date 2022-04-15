@@ -15,7 +15,7 @@ export default function Example() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
+    <div className="absolute w-full z-50">
       <div className='top-0 z-50 min-h-full '>
         <Disclosure as='nav' className='firefox:bg-opacity-90 transition'>
           {({ open }) => (
@@ -99,7 +99,7 @@ export default function Example() {
               </div>
 
               <Disclosure.Panel className='absolute  z-50 w-full xl:hidden'>
-                <div className='space-y-1 bg-myLight w-full z-50 px-2 pt-2 pb-3 sm:px-3'>
+                <div className='space-y-1  w-full z-50 px-2 pt-2 pb-3 sm:px-3'>
                   {navigation.map((item) => (
                     <Disclosure.Button
                       key={item.name}
@@ -158,6 +158,6 @@ export default function Example() {
           )}
         </Disclosure>
       </div>
-    </>
+    </div>
   );
 }
