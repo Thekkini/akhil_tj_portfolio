@@ -68,12 +68,12 @@ function Playground() {
               <div className='group'>
                 <div
                   className={`arrowButton ${
-                    num === 0 ? 'border-myRedLight' : 'border-myRed '
+                    num === 0 ? 'border-myRedLight cursor-not-allowed	' : 'border-myRed '
                   } `}
                 >
                   <p
                     className={`  ${
-                      num === 0 ? 'text-myRedLight' : 'text-myRed'
+                      num === 0 ? 'text-myRedLight cursor-not-allowed	' : 'text-myRed'
                     }`}
                   >
                     <svg
@@ -106,12 +106,12 @@ function Playground() {
               <div className='group'>
                 <div
                   className={`arrowButton ${
-                    num === 5 ? 'border-myRedLight' : 'border-myRed '
+                    num === 5 ? 'border-myRedLight cursor-not-allowed	' : 'border-myRed '
                   } flex cursor-pointer items-center justify-center rounded-full border-[1.5px]  py-[6px] px-[6px]`}
                 >
                   <p
                     className={`  ${
-                      num === 5 ? 'text-myRedLight' : 'text-myRed '
+                      num === 5 ? 'text-myRedLight cursor-not-allowed	' : 'text-myRed '
                     }`}
                   >
                     <svg

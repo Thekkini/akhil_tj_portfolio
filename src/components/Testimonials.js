@@ -90,9 +90,9 @@ function Testimonials() {
                 <button
                   className={`arrowButton ${
                     num === 0
-                      ? 'border-[#000249] opacity-[0.27]'
+                      ? 'border-[#000249] cursor-not-allowed	 opacity-[0.27]'
                       : 'border-myRed  '
-                  } flex w-full cursor-pointer  items-center justify-center rounded-full border-2 py-[6px] px-[6px]`}
+                  } flex w-full   items-center justify-center rounded-full border-2 py-[6px] px-[6px]`}
                 >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -123,9 +123,9 @@ function Testimonials() {
                 <button
                   className={`arrowButton ${
                     num === 2
-                      ? 'border-[#000249]  opacity-[0.27]'
-                      : 'border-myRed  '
-                  } flex w-full cursor-pointer  items-center justify-center rounded-full border-[2px] py-[6px] px-[6px]`}
+                      ? 'border-[#000249]  cursor-not-allowed	 opacity-[0.27]'
+                      : 'border-myRed'
+                  } flex w-full  items-center justify-center rounded-full border-[2px] py-[6px] px-[6px]`}
                 >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -136,7 +136,7 @@ function Testimonials() {
                     <path fill='none' d='M0 0h24v24H0z' />
                     <path
                       fill={
-                        num === 2 ? 'rgba(0, 2, 73, .27)' : 'rgba(246,73,13,1)'
+                        num === 2 ? 'rgba(0, 2, 73, .27) 	' : 'rgba(246,73,13,1)'
                       }
                       d='M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z'
                     />

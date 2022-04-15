@@ -15,13 +15,13 @@ export default function Example() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="absolute w-full z-50">
+    <div className='absolute w-full z-50'>
       <div className='top-0 z-50 min-h-full '>
         <Disclosure as='nav' className='firefox:bg-opacity-90 transition'>
           {({ open }) => (
             <>
               <div className='mx-auto px-[16px]  xl:px-[160px] transition'>
-                <div className='flex h-16 items-center justify-between'>
+                <div className='flex h-16 items-center  justify-between'>
                   <Link to='/'>
                     <div className='flex-shrink-0'>
                       <p className='text-[16px] font-semibold  text-myBlue	'>
@@ -55,22 +55,24 @@ export default function Example() {
                         </a>
                         <a
                           href='/'
-                          className='button flex items-center gap-2 text-[16px] font-semibold uppercase text-myBlue transition delay-100 ease-in-out hover:text-myRed active:text-myRed'
+                          className='button flex   gap-2 text-[16px] font-semibold uppercase text-myBlue transition delay-100 ease-in-out hover:text-myRed active:text-myRed'
                         >
                           Contact
-                          <svg
-                            xmlns='http://www.w3.org/2000/svg'
-                            viewBox='0 0 24 24'
-                            width='24'
-                            height='24'
-                          >
-                            <path fill='none' d='M0 0h24v24H0z' />
-                            <path
-                              d='M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z'
-                              fill='rgba(246,73,13,1)'
-                              className='group-hover:fill-myLight'
-                            />
-                          </svg>
+                          <div className="relative bottom-[2px]">
+                            <svg
+                              xmlns='http://www.w3.org/2000/svg'
+                              viewBox='0 0 24 24'
+                              width='24'
+                              height='24'
+                            >
+                              <path fill='none' d='M0 0h24v24H0z' />
+                              <path
+                                d='M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z'
+                                fill='rgba(246,73,13,1)'
+                                className='group-hover:fill-myLight'
+                              />
+                            </svg>
+                          </div>
                         </a>
                       </div>
                     </div>

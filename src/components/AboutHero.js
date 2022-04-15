@@ -11,7 +11,7 @@ function AboutHero() {
     <div className=' xl:px-[160px] xl:pt-[80px] pb-[120px] xl:pb-[180px]'>
       <div className='xl:flex justify-center gap-5'>
         <img
-          className='aspect-square  w-full object-cover '
+          className='aspect-square xl:rounded  w-full object-cover '
           src={aboutData.aboutMyself.img}
           alt='myPhoto'
         />

@@ -20,22 +20,23 @@ function MyPictures() {
         <h1 className='sub-heading pb-[108px]  xl:pb-0 '>
           {aboutData.myPictureHeading}
         </h1>
-        <div className="hidden xl:block">
-          
-         <div className="flex gap-2 items-center"> <p className='main-para text-myRed pt-1'>akhiltj.dev@gmail.com</p>
-          <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 24 24'
-                  width='24'
-                  height='24'
-                >
-                  <path fill='none' d='M0 0h24v24H0z' />
-                  <path
-                    d='M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z'
-                    fill='rgba(246,73,13,1)'
-                    className='group-hover:fill-myLight'
-                  />
-                </svg></div>
+        <div className='hidden xl:block'>
+          <div className='flex gap-2 items-center'>
+            <p className='main-para text-myRed pt-1'>akhiltj.dev@gmail.com</p>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'
+              width='24'
+              height='24'
+            >
+              <path fill='none' d='M0 0h24v24H0z' />
+              <path
+                d='M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z'
+                fill='rgba(246,73,13,1)'
+                className='group-hover:fill-myLight'
+              />
+            </svg>
+          </div>
           <div className='flex'>
             <a className='group  xl:w-fit' href={subFooter[0].link}>
               <button className='button mt-[28px] flex w-full transition cursor-pointer items-center justify-center gap-2 rounded-[4px] border-[2px] border-myRed px-6 py-[16px] group-hover:bg-myRed xl:mt-[32px] xl:w-fit xl:px-6 '>
@@ -131,14 +132,14 @@ function MyPictures() {
                 <button
                   className={`button ${
                     num === 0
-                      ? 'border-myRedLight'
+                      ? 'border-myRedLight cursor-not-allowed'
                       : 'border-myRed group-hover:bg-myRed'
-                  } flex w-full cursor-pointer transition  items-center justify-center rounded-[4px] border-2 py-[16px] px-[24px]`}
+                  } flex w-full  transition  items-center justify-center rounded-[4px] border-2 py-[16px] px-[24px]`}
                 >
                   <p
                     className={`  ${
                       num === 0
-                        ? 'text-myRedLight'
+                        ? 'text-myRedLight cursor-not-allowed'
                         : 'text-myRed group-hover:text-myLight'
                     }`}
                   >
@@ -153,14 +154,14 @@ function MyPictures() {
                 <button
                   className={`button ${
                     num === 3
-                      ? 'border-myRedLight'
+                      ? 'border-myRedLight cursor-not-allowed'
                       : 'border-myRed group-hover:bg-myRed'
-                  } flex w-full cursor-pointer  items-center transition justify-center rounded-[4px] border-2 py-[16px] px-[24px]`}
+                  } flex w-full   items-center transition justify-center rounded-[4px] border-2 py-[16px] px-[24px]`}
                 >
                   <p
                     className={`  ${
                       num === 3
-                        ? 'text-myRedLight'
+                        ? 'text-myRedLight cursor-not-allowed'
                         : 'text-myRed group-hover:text-myLight'
                     }`}
                   >
