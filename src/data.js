@@ -264,7 +264,7 @@ export const aboutData = {
       'c++',
     ],
   },
-  myPictureHeading: 'Life is what happens when you’re busy making other plans.',
+  myPictureHeading: 'I’m looking for a full-time UX designer position world wide. Hit me up!',
   myPictures: [
     {
       id: 0,
