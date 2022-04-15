@@ -24,7 +24,7 @@
   @apply cursor-pointer text-[14px] font-semibold uppercase;
 }
 .arrowButton {
-  @apply flex cursor-pointer  items-center justify-center rounded-full border-[1.5px] py-[6px] px-[6px];
+  @apply flex cursor-pointer  items-center justify-center rounded-full border-[1.75px] py-[6px] px-[6px];
 }
 
 .project-subheading {

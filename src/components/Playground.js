@@ -65,15 +65,19 @@ function Playground() {
         >
           <div className='flex items-center gap-7 pb-6'>
             <ButtonBack onClick={() => setNum(num - 1)}>
-              <div className='group'>
+              <div className={`group ${num === 0 ? 'cursor-not-allowed' : ''}`}>
                 <div
                   className={`arrowButton ${
-                    num === 0 ? 'border-myRedLight cursor-not-allowed	' : 'border-myRed '
+                    num === 0
+                      ? 'border-[#000249] cursor-not-allowed	 opacity-[0.27]	'
+                      : 'border-myRed '
                   } `}
                 >
                   <p
                     className={`  ${
-                      num === 0 ? 'text-myRedLight cursor-not-allowed	' : 'text-myRed'
+                      num === 0
+                        ? 'text-myRedLight cursor-not-allowed	'
+                        : 'text-myRed'
                     }`}
                   >
                     <svg
@@ -87,7 +91,7 @@ function Playground() {
                         d='M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z'
                         fill={
                           num === 0
-                            ? 'rgba(246,73,13,0.54)'
+                            ? 'rgba(0, 2, 73, .27)'
                             : 'rgba(246,73,13,1)'
                         }
                       />
@@ -99,19 +103,23 @@ function Playground() {
             <Page
               currentPage={num + 1}
               maxPage={playground.length}
-              bgCol={'bg-black'}
+              bgCol={'bg-myBlue'}
               textCol={'text-myLight'}
             />
             <ButtonNext onClick={() => setNum(num + 1)}>
-              <div className='group'>
+              <div className={`group ${num === 5 ? 'cursor-not-allowed' : ''}`}>
                 <div
                   className={`arrowButton ${
-                    num === 5 ? 'border-myRedLight cursor-not-allowed	' : 'border-myRed '
-                  } flex cursor-pointer items-center justify-center rounded-full border-[1.5px]  py-[6px] px-[6px]`}
+                    num === 5
+                      ? 'border-[#000249]  cursor-not-allowed	 opacity-[0.27]'
+                      : 'border-myRed '
+                  } flex cursor-pointer items-center justify-center rounded-full border-[1.75px]  py-[6px] px-[6px]`}
                 >
                   <p
                     className={`  ${
-                      num === 5 ? 'text-myRedLight cursor-not-allowed	' : 'text-myRed '
+                      num === 5
+                        ? 'text-myRedLight cursor-not-allowed	'
+                        : 'text-myRed '
                     }`}
                   >
                     <svg
@@ -124,7 +132,7 @@ function Playground() {
                       <path
                         fill={
                           num === 5
-                            ? 'rgba(246,73,13,0.54)'
+                            ? 'rgba(0, 2, 73, .27) 	'
                             : 'rgba(246,73,13,1)'
                         }
                         d='M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z'

@@ -22,7 +22,7 @@ function Subfooter() {
       </div>
       <div className='flex'>
         <a className='group  xl:w-fit' href={subFooter[0].link}>
-          <button className='button mt-[28px] flex w-full transition cursor-pointer items-center justify-center gap-2 rounded-[4px] border-[2px] border-myRed px-6 py-[16px] group-hover:bg-myRed xl:mt-[32px] xl:w-fit xl:px-6 '>
+          <button className='button mt-[28px] flex w-full transition cursor-pointer items-center justify-center gap-2 rounded-[4px] border-[1.75px] border-myRed px-6 py-[16px] group-hover:bg-myRed xl:mt-[32px] xl:w-fit xl:px-6 '>
             <p className='text-myRed group-hover:text-myLight'>
               {subFooter[0].button}
             </p>

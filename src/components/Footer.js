@@ -11,7 +11,7 @@ function Footer() {
               <a
                 key={index}
                 href={item.link}
-                className='flex cursor-pointer items-center justify-center space-x-[10.5px] text-[14px] font-semibold uppercase'
+                className='flex cursor-pointer hover:text-myRed transition items-center justify-center space-x-[10.5px] text-[14px] font-semibold uppercase'
               >
                 <p>{item.name}</p>
                 <div>

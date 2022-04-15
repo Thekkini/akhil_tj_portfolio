@@ -104,15 +104,11 @@ function Project({
             {button.map((btn, index) => {
               return (
                 <div key={index} className='flex'>
-                  <a
-                    className='group w-full xl:w-fit'
-                    href={btn.link}
-                    
-                  >
+                  <a className='group w-full xl:w-fit' href={btn.link}>
                     <button
                       className={`${
                         btnLength === 1 ? 'px-6' : ''
-                      }  button mt-[28px] flex w-full  cursor-pointer items-center justify-center gap-2 rounded-[4px] border-[2px] border-myRed py-[16px] group-hover:bg-myRed xl:mt-[32px] transition xl:w-fit xl:px-6 `}
+                      }  button mt-[28px] flex w-full  cursor-pointer items-center justify-center gap-2 rounded-[4px] border-[1.75px] border-myRed py-[16px] group-hover:bg-myRed xl:mt-[32px] transition xl:w-fit xl:px-6 `}
                     >
                       <p className='text-myRed  group-hover:text-myLight'>
                         {btn.name}

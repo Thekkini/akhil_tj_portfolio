@@ -34,7 +34,7 @@ function Hero() {
               <a
                 key={index}
                 href={item.link}
-                className='button flex items-center justify-center space-x-[10.5px]'
+                className='button flex items-center transition hover:text-myRed justify-center space-x-[10.5px]'
               >
                 <p>{item.name}</p>
                 <div>
