@@ -11,12 +11,10 @@ import {
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 function MyPictures() {
-  
   const [num, setNum] = useState(0);
- 
-  
+
   return (
-    <div className='gap-[20px] px-[16px] pb-[108px] xl:grid xl:grid-cols-2 xl:px-[160px]'>
+    <div className='gap-[20px]  pb-[108px] xl:grid xl:grid-cols-2 px-[16px] xl:px-[160px]'>
       <h1 className='sub-heading pb-[108px]  xl:pb-0 '>
         {aboutData.myPictureHeading}
       </h1>
@@ -30,29 +28,21 @@ function MyPictures() {
           />
         </div>
         <div className='grid grid-cols-3 gap-3'>
-          <div
-            className='bg-slate-100'
-            
-          >
+          <div className='bg-slate-100'>
             <img
               className='aspect-square  w-full object-cover'
               src={aboutData.myPictures[1].img}
               alt='myPictures'
             />
           </div>
-          <div
-            className='bg-slate-100'
-           
-          >
+          <div className='bg-slate-100'>
             <img
               className='aspect-square  w-full object-cover'
               src={aboutData.myPictures[2].img}
               alt='myPictures'
             />
           </div>
-          <div
-           
-          >
+          <div>
             <img
               className='aspect-square  w-full object-cover'
               src={aboutData.myPictures[3].img}
@@ -84,7 +74,7 @@ function MyPictures() {
               return (
                 <Slide index={index}>
                   <img
-                    className='h-[343px] w-full object-cover'
+                    className='rounded aspect-square w-full object-cover'
                     src={item.img}
                     alt='playground'
                   />

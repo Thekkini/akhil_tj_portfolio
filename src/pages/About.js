@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import AboutHero from '../components/AboutHero';
 import Skills from '../components/Skills';
 import MyPictures from '../components/MyPictures';
+import Subfooter from '../components/Subfooter';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 // import { ScrollerMotion } from 'scroller-motion';
@@ -48,6 +49,9 @@ function About() {
       </div>
       <div data-aos='fade-up'>
         <MyPictures />
+      </div>
+      <div data-aos='fade-up'>
+        <Subfooter />
       </div>
     </>
   );
