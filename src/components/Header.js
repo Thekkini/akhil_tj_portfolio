@@ -14,10 +14,20 @@ function classNames(...classes) {
 export default function Example() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const clickHandler = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen);
+  };
+
   return (
     <div className='absolute w-full z-50'>
       <div className='top-0 z-50 min-h-full '>
-        <Disclosure as='nav' className='firefox:bg-opacity-90 transition'>
+        <Disclosure
+          as='nav'
+          className={`${
+            isOpen ? 'bg-myLight' : 'firefox:bg-opacity-90'
+          } transition`}
+        >
           {({ open }) => (
             <>
               <div className='mx-auto px-[16px]  xl:px-[160px] transition'>
@@ -38,7 +48,7 @@ export default function Example() {
                     </div>
                   </Link>
 
-                  <div className='hidden xl:block'>
+                  <div className='hidden  xl:block'>
                     <div className='flex  items-baseline '>
                       <div className='flex gap-16'>
                         <a
@@ -58,7 +68,7 @@ export default function Example() {
                           className='button flex   gap-2 text-[16px] font-semibold uppercase text-myBlue transition delay-100 ease-in-out hover:text-myRed active:text-myRed'
                         >
                           Contact
-                          <div className="relative bottom-[2px]">
+                          <div className='relative bottom-[2px]'>
                             <svg
                               xmlns='http://www.w3.org/2000/svg'
                               viewBox='0 0 24 24'
@@ -78,14 +88,9 @@ export default function Example() {
                     </div>
                   </div>
 
-                  <div className='flex z-50 xl:hidden'>
+                  <div className='flex z-50 xl:hidden ' onClick={clickHandler}>
                     {/* Mobile menu button */}
-                    <Disclosure.Button
-                      onClick={() => {
-                        setIsOpen(!isOpen);
-                      }}
-                      className='transition inline-flex items-center justify-center rounded-lg p-2  text-myBlue '
-                    >
+                    <Disclosure.Button className='transition  inline-flex items-center justify-center rounded-lg p-2  text-myBlue '>
                       <span className='sr-only'>Open main menu</span>
                       {open ? (
                         <XIcon className='block h-6 w-6' aria-hidden='true' />
@@ -100,7 +105,11 @@ export default function Example() {
                 </div>
               </div>
 
-              <Disclosure.Panel className='absolute  z-50 w-full xl:hidden'>
+              <Disclosure.Panel
+                className={`absolute ${
+                  isOpen && 'bg-myLight'
+                } z-50 w-full xl:hidden`}
+              >
                 <div className='space-y-1  w-full z-50 px-2 pt-2 pb-3 sm:px-3'>
                   {navigation.map((item) => (
                     <Disclosure.Button
