@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
-
+import { useState, useEffect } from 'react';
 /* This example requires Tailwind CSS v2.0+ */
-import { useState } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
@@ -10,17 +9,15 @@ import { navigation, contact } from '../data';
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
-
 export default function Example() {
   const [isOpen, setIsOpen] = useState(false);
 
   const clickHandler = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen);
   };
 
   return (
-    <div className='absolute w-full z-50'>
+    <header className='absolute w-full z-50'>
       <div className='top-0 z-50 min-h-full '>
         <Disclosure
           as='nav'
@@ -88,7 +85,7 @@ export default function Example() {
                     </div>
                   </div>
 
-                  <div className='flex z-50 xl:hidden ' onClick={clickHandler}>
+                  <div className='flex z-50 xl:hidden' onClick={clickHandler}>
                     {/* Mobile menu button */}
                     <Disclosure.Button className='transition  inline-flex items-center justify-center rounded-lg p-2  text-myBlue '>
                       <span className='sr-only'>Open main menu</span>
@@ -106,9 +103,7 @@ export default function Example() {
               </div>
 
               <Disclosure.Panel
-                className={`absolute ${
-                  isOpen && 'bg-myLight'
-                } z-50 w-full xl:hidden`}
+                className={`absolute ${isOpen && 'bg-myLight'} z-50 w-full `}
               >
                 <div className='space-y-1  w-full z-50 px-2 pt-2 pb-3 sm:px-3'>
                   {navigation.map((item) => (
@@ -169,6 +164,6 @@ export default function Example() {
           )}
         </Disclosure>
       </div>
-    </div>
+    </header>
   );
 }

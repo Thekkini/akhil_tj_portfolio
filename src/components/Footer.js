@@ -2,7 +2,7 @@ import React from 'react';
 import { socialMedia } from '../data';
 function Footer() {
   return (
-    <div className='px-[16px] pb-6 pt-32 xl:px-[160px]  '>
+    <footer className='px-[16px] pb-6 pt-32 xl:px-[160px]  '>
       {/* Desktop view */}
       <div className='hidden items-end justify-between xl:flex '>
         <div className='flex gap-12'>
@@ -69,7 +69,7 @@ function Footer() {
           </p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 
