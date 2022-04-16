@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 /* This example requires Tailwind CSS v2.0+ */
-import { Disclosure } from '@headlessui/react';
+import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 import { navigation, contact } from '../data';
@@ -19,7 +19,7 @@ export default function Example() {
   return (
     <header className='absolute w-full z-50'>
       <div className='top-0 z-50 min-h-full '>
-        <Disclosure
+        <Popover
           as='nav'
           className={`${
             isOpen ? 'bg-myLight' : 'firefox:bg-opacity-90'
@@ -27,6 +27,7 @@ export default function Example() {
         >
           {({ open }) => (
             <>
+            {setIsOpen(open)}
               <div className='mx-auto px-[16px]  xl:px-[160px] transition'>
                 <div className='flex h-16 items-center  justify-between'>
                   <Link to='/'>
@@ -87,7 +88,7 @@ export default function Example() {
 
                   <div className='flex z-50 xl:hidden' onClick={clickHandler}>
                     {/* Mobile menu button */}
-                    <Disclosure.Button className='transition  inline-flex items-center justify-center rounded-lg p-2  text-myBlue '>
+                    <Popover.Button className='transition  inline-flex items-center justify-center rounded-lg p-2  text-myBlue '>
                       <span className='sr-only'>Open main menu</span>
                       {open ? (
                         <XIcon className='block h-6 w-6' aria-hidden='true' />
@@ -97,17 +98,24 @@ export default function Example() {
                           aria-hidden='true'
                         />
                       )}
-                    </Disclosure.Button>
+                    </Popover.Button>
                   </div>
                 </div>
               </div>
-
-              <Disclosure.Panel
+              <Transition
+        enter="transition duration-100 ease-out"
+        enterFrom="transform  opacity-0"
+        enterTo="transform scale-100 opacity-100"
+        leave="transition duration-75 ease-out"
+        leaveFrom="transform scale-100 opacity-100"
+        leaveTo="transform  opacity-0"
+      >
+              <Popover.Panel
                 className={`absolute ${isOpen && 'bg-myLight'} z-50 w-full `}
               >
                 <div className='space-y-1  w-full z-50 px-2 pt-2 pb-3 sm:px-3'>
                   {navigation.map((item) => (
-                    <Disclosure.Button
+                    <Popover.Button
                       key={item.name}
                       as='a'
                       href={item.href}
@@ -122,10 +130,10 @@ export default function Example() {
                       <p className='button text-[16px] font-semibold text-myBlue transition delay-100 ease-in-out hover:text-myRed active:text-myRed'>
                         {item.name}
                       </p>
-                    </Disclosure.Button>
+                    </Popover.Button>
                   ))}
                   {contact.map((item) => (
-                    <Disclosure.Button
+                    <Popover.Button
                       key={item.name}
                       as='a'
                       href={item.href}
@@ -156,13 +164,14 @@ export default function Example() {
                           />
                         </svg>
                       </a>
-                    </Disclosure.Button>
+                    </Popover.Button>
                   ))}
                 </div>
-              </Disclosure.Panel>
+              </Popover.Panel>
+              </Transition>
             </>
           )}
-        </Disclosure>
+        </Popover>
       </div>
     </header>
   );
