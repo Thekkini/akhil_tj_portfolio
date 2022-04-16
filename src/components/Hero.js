@@ -10,7 +10,7 @@ function Hero() {
   return (
     <div
       data-aos='fade-right'
-      className='px-4 text-[#000249] pt-20 xl:flex xl:min-h-screen xl:flex-col xl:justify-between xl:pt-0 '
+      className='px-4 text-[#000249] pt-40 xl:flex xl:min-h-screen xl:flex-col xl:justify-between xl:pt-0 '
     >
       <div className='my-auto'>
         <p className='main-para pb-[4px] xl:text-center text-[#000249]'>
